@@ -1,0 +1,310 @@
+/***********/
+/* CLIENTE */
+/***********/
+
+.cliente{
+    background-color: var(--cor-background);
+    padding: 30px;
+}
+.cliente #cliente-menu li{
+    border: 1px solid #696969;
+    padding: 15px 20px 14px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #696969;
+    transition: 0.3s;
+    cursor: pointer;
+    display: inline-flex;
+}
+.cliente #cliente-menu li:last-of-type{
+    margin-right: 0px;
+}
+.cliente #cliente-menu li:hover{
+    background-color: #696969;
+    color: #FFF;
+}
+.cliente #cliente-menu .menu-cliente-ativo{
+    background-color: #696969;
+    color: #FFF;
+}
+.cliente .cliente-btn-editar{
+    margin-top: 10px;
+}
+
+/*********************/
+/* CLIENTE ENDEREÇOS */
+/*********************/
+
+#cliente-enderecos .cliente-enderecos-endereco{
+    padding: 20px;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+    color: #696969;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#cliente-enderecos .cliente-enderecos-endereco:hover{
+    border: 1px solid #696969;
+}
+#cliente-enderecos .cliente-enderecos-endereco-ativo{
+    border: 1px solid #696969;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-nome{
+    font-weight: 600;
+    font-size: 18px;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-cep{
+    font-weight: 500;
+    font-size: 15px;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-dados, #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-cid-est{
+    font-weight: 400;
+    font-size: 15px;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-referencia{
+    font-weight: 300;
+    font-size: 13px;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-label-padrao{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-excluir{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border: 1px solid #696969;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1;
+    transition: 0.3s;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-editar{
+    position: absolute;
+    bottom: 20px;
+    right: 70px;
+    padding: 10px;
+    border: 1px solid #696969;
+    cursor: pointer;
+    background-color: transparent;
+    z-index: 1;
+    transition: 0.3s;
+}
+#cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-editar:hover, #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-excluir:hover{
+    background-color: #CCC;
+}
+#cliente-enderecos #cliente-enderecos-btn-novo{
+    width: fit-content;
+}
+#cliente-enderecos #cliente-enderecos-aviso-sem-enderecos{
+    color: #696969;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/********************/
+/* CLIENTE CADASTRO */
+/********************/
+
+#cliente-cadastro, #cliente-cadastro-confirmacao{
+    background-color: var(--cor-background);
+    padding: 100px 30px;
+    color: #696969;
+}
+#cliente-cadastro #cliente-cadastro-btn-continuar, #cliente-cadastro-confirmacao #cliente-cadastro-confirmacao-btn-continuar{
+    width: 100%;
+}
+#cliente-cadastro #cliente-cadastro-label-aceite-termos{
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
+#cliente-cadastro #cliente-cadastro-label-aceite-termos a{
+    color: var(--cor-tema);
+}
+
+/*******************/
+/* CLIENTE PEDIDOS */
+/*******************/
+
+#cliente-pedidos #cliente-pedidos-resumo{
+    width: 90%;
+}
+#cliente-pedidos .cliente-pedidos-resumo-valores, #cliente-pedidos .cliente-pedidos-resumo-forma-pagamento, #cliente-pedidos .cliente-pedidos-resumo-entrega, #cliente-pedidos .cliente-pedidos-resumo-status{
+    border: 1px solid #CCC;
+    padding: 15px 20px 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s;
+    background-color: RGBA(0,0,0,0.1);
+    border-color: #696969;
+    color: #696969;
+}
+#cliente-pedidos .cliente-pedidos-resumo-informacao{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 15px;
+}
+#cliente-pedidos #cliente-pedidos-btn-produtos{
+    width: fit-content;
+    margin-top: 20px;
+}
+#cliente-pedidos .cliente-pedidos-cabecalho{
+    padding: 10px 20px;
+    color: #696969;
+    font-weight: 600;
+}
+#cliente-pedidos .cliente-pedidos-pedido{
+    padding: 15px 20px 14px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    color: #696969;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-imagem{
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-nome{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-preco{
+    font-weight: 500;
+    font-size: 15px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-caracteristicas{
+    font-size: 12px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-quantidade{
+    font-size: 12px;
+}
+#cliente-pedidos-frete-resumo-valor-total-produtos, #cliente-pedidos-frete-resumo-valor-total-frete, #cliente-pedidos-frete-resumo-valor-total-total, #cliente-pedidos-frete-resumo-valor-total-juros, #cliente-pedidos-frete-resumo-valor-total-desconto{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+}
+#cliente-pedidos-frete-resumo-valor-total-total{
+    font-weight: 600;
+    font-size: 22px;
+}
+#cliente-pedidos-frete-resumo-valor-total-valor-desconto{
+    color: green;
+}
+#cliente-pedidos-frete-resumo-valor-total-valor-juros{
+    color: firebrick;
+}
+#cliente-pedidos #cliente-pedidos-btn-voltar, #cliente-pedidos #cliente-pedidos-btn-ajuda{
+    width: fit-content;
+    margin-right: 5px;
+}
+#cliente-pedidos #cliente-pedidos-botoes li{
+    display: inline-flex;
+}
+#cliente-pedidos #cliente-pedidos-btn-boleto{
+    color: var(--cor-tema);
+}
+#cliente-pedidos #cliente-pedido-img-qrcode-pix{
+    max-width: 250px;
+    margin: 20px 0 10px 0;
+}
+#cliente-pedidos #cliente-pedido-img-qrcode-pix-asaas{
+    max-width: 250px;
+    margin: 10px 0 15px 0;
+}
+#cliente-pedidos .cliente-pedidos-resumo-status-rastreamento a{
+    display: flex;
+    align-items: center;
+}
+#cliente-pedidos .cliente-pedidos-resumo-status-rastreamento img{
+    max-width: 17px;
+}
+#cliente-pedidos #txt-copy{
+    border: 0;
+    width: 100%;
+    font-weight: bold;
+    background: transparent;
+    font-size: 11px;
+    min-height: 50px;
+}
+#cliente-pedidos #btn-copy{
+    background-color: lightslategray;
+    color: #FFF;
+    padding: 15px 20px;
+    font-size: 13px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+#cliente-pedidos .textarea-chave-pix{
+    overflow:hidden;
+    resize: none;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 575px){
+    .cliente, #cliente-cadastro, #cliente-cadastro-confirmacao{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-excluir, #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-editar{
+        background-color: #CCC;
+        padding: 6px;
+        top: 20px;
+        bottom: unset;
+    }
+    #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-editar{
+        right: 60px;
+    }
+    #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-editar img, #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-btn-excluir img{
+        filter: brightness(0.5);
+    }
+    #cliente-enderecos .cliente-enderecos-endereco .cliente-enderecos-endereco-label-padrao {
+        right: 102px;
+        padding: 3px 10px 1px;
+        background-color: #CCC;
+        border: 1px solid #696969;
+        font-size: 22px;
+    }
+    .cliente #cliente-menu li {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .cliente #cliente-menu li:last-of-type{
+        margin-bottom: 0px;
+    }
+    #cliente-pedidos .cliente-pedidos-resumo-informacao {
+        font-size: 15px;
+    }
+    #cliente-pedidos .cliente-pedidos-resumo-status-rastreamento .cliente-pedidos-resumo-informacao{
+        display: block;
+    }
+    #cliente-pedidos .link-pagamento-asaas{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1199px){
+    #cliente-cadastro, #cliente-cadastro-confirmacao{
+        padding: 30px;
+    }
+    #cliente-pedidos #cliente-pedidos-resumo{
+        width: 100%;
+    }
+}

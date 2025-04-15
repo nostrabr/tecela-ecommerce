@@ -1,0 +1,275 @@
+/*************/
+/* AVALIAÇÃO */
+/*************/
+
+#avaliacao{
+    background-color: var(--cor-background);
+    padding: 30px 30px 25px 30px;
+}
+#avaliacao .avaliacao-loja{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#avaliacao .avaliacao-loja h2{
+    font-size: 20px;
+    color: #696969;
+}
+#avaliacao .avaliacao-loja ul{
+    display: inline-flex;
+}
+#avaliacao .avaliacao-loja img {
+    max-width: 50px;
+    margin-right: 8px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#avaliacao .avaliacao-loja .img-dourada {
+    filter: grayscale(0)!important;
+}
+
+/*********************/
+/* AVALIAÇÃO RÉPLICA */
+/*********************/
+
+#avaliacao-replicas{
+    background-color: var(--cor-background);
+    padding: 30px 30px 60px 30px;
+}
+#avaliacao-replicas .titulo-avaliacao-replicas{
+    font-size: 23px;
+    font-weight: 500;
+    color: #696969;
+    margin-top: 25px;
+}
+#avaliacao-replicas .avaliacao-loja-replica{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#avaliacao-replicas .avaliacao-loja-replica h2{
+    font-size: 20px;
+    color: #696969;
+}
+#avaliacao-replicas .avaliacao-loja-replica ul{
+    display: inline-flex;
+}
+#avaliacao-replicas .avaliacao-loja-replica .img-dourada {
+    filter: grayscale(0)!important;
+}
+#avaliacao-replicas .avaliacao-loja-replica img {
+    max-width: 25px;
+    margin-right: 5px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#avaliacao-replicas .avaliacao-comentario{
+    font-size: 15px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+#avaliacao-replicas .avaliacao-data{
+    font-size: 13px;
+}
+#avaliacao-replicas .avaliacao-cliente{
+    margin-top: 5px;
+    font-weight: 600;
+}
+#avaliacao-replicas .avaliacao-replica-titulo{
+    font-weight: 600;
+    font-size: 16px;
+}
+#avaliacao-replicas .avaliacao-replica{
+    font-weight: 500;
+    font-size: 16px;
+}
+#avaliacao-replicas .avaliacao-replica-data{
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 575px){
+    #avaliacao{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #avaliacao-replicas{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+/***********/
+/* PRODUTO */
+/***********/
+
+#produto-avaliacoes{
+    background-color: var(--cor-background);
+    padding: 0px 30px 60px 30px;
+}
+#produto-avaliacoes .titulo-section{
+    height: fit-content;
+}
+#produto-avaliacoes .avaliacao-loja ul, #site-avaliacoes .avaliacao-loja ul{
+    display: inline-flex;
+    margin: 0px;
+}
+#produto-avaliacoes .avaliacao-loja img, #site-avaliacoes .avaliacao-loja img{
+    max-width: 20px;
+    margin-right: 8px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+#produto-avaliacoes .avaliacao-loja-geral{
+    text-align: center;
+    margin-bottom: 20px
+}
+#site-avaliacoes .avaliacao-loja-geral{
+    text-align: left;
+    margin-bottom: 20px
+}
+#produto-avaliacoes .avaliacao-loja-geral img{
+    max-width: 35px!important;
+}
+#produto-avaliacoes .avaliacao-loja .img-dourada, #site-avaliacoes .avaliacao-loja .img-dourada {
+    filter: grayscale(0)!important;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao, #site-avaliacoes .site-avaliacoes-avaliacao{
+    padding: 20px 0 0 0;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao-comentario{
+    font-size: 15px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao-data{
+    font-size: 13px;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao-cliente{
+    margin-top: 5px;
+    font-weight: 600;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao-replica-titulo{
+    font-weight: 600;
+    font-size: 13px;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao-replica{
+    font-weight: 500;
+    font-size: 13px;
+}
+#produto-avaliacoes .produto-avaliacoes-avaliacao-replica-data{
+    font-weight: 400;
+    font-size: 11px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 575px){
+    #produto-avaliacoes{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+
+
+/********/
+/* SITE */
+/********/
+
+#site-avaliacoes .titulo-section{
+    justify-content: flex-start;
+    text-align: left;
+    height: fit-content;
+    margin-bottom: 5px;
+}
+#site-avaliacoes{    
+    background-color: var(--cor-background);
+    padding: 60px 30px 60px 30px;
+}
+#site-avaliacoes .legenda-quantidade-avaliacoes{
+    font-style: italic;
+    margin-top: -10px;
+}
+#site-avaliacoes .nota-extenso{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+}
+#site-avaliacoes .nota-extenso-pequena{
+    font-size: 26px;
+}
+#site-avaliacoes hr{
+    width: 100px;
+    margin-left: 0px;
+    border-top: 4px solid #000;
+    border-radius: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#site-avaliacoes .avaliacao-loja-geral img{
+    max-width: 50px;
+}
+#site-avaliacoes .avaliacao-loja-categoria img{
+    max-width: 40px;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao img{
+    max-width: 20px;
+}
+#site-avaliacoes .estrela-preta{
+    filter: grayscale(1000) brightness(0.3)!important;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-comentario{
+    font-size: 15px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-cliente{
+    margin-top: 5px;
+    font-weight: 600;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-produto{
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-data{
+    font-size: 13px;
+}
+.btn-carregar-mais{
+    color: #FFF!important;
+    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 0px;
+    margin-top: 15px;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-replica-titulo{
+    font-weight: 600;
+    font-size: 13px;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-replica{
+    font-weight: 500;
+    font-size: 13px;
+}
+#site-avaliacoes .site-avaliacoes-avaliacao-replica-data{
+    font-weight: 400;
+    font-size: 11px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 575px){
+    #site-avaliacoes{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+@media screen and (max-width: 767px){
+    #titulo-avaliacao-produtos{
+        margin-top: 50px;
+    }
+}

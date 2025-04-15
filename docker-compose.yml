@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  web:
+    image: casaliwe/ecommerce-php7
+    container_name: ecommerce-web
+    tty: true
+    stdin_open: true
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    command: apachectl -D FOREGROUND

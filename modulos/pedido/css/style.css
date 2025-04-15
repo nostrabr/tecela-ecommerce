@@ -1,0 +1,158 @@
+/**********/
+/* PEDIDO */
+/**********/
+
+#cliente-pedidos{
+    padding: 50px 15px;
+}
+#cliente-pedidos #pedido-logo-loja{
+    max-height: 115px;
+}
+#cliente-pedidos #pedido-logo-loja img{
+    max-width: 180px;
+    height: auto;
+    max-height: 100px;
+}
+#cliente-pedidos #cliente-pedidos-resumo{
+    width: 100%;
+}
+#cliente-pedidos .cliente-pedidos-resumo-valores, #cliente-pedidos .cliente-pedidos-resumo-forma-pagamento, #cliente-pedidos .cliente-pedidos-resumo-entrega, #cliente-pedidos .cliente-pedidos-resumo-status{
+    border: 1px solid #CCC;
+    padding: 15px 20px 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s;
+    background-color: RGBA(0,0,0,0.1);
+    border-color: #696969;
+    color: #696969;
+}
+#cliente-pedidos .cliente-pedidos-resumo-informacao{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 15px;
+}
+#cliente-pedidos #cliente-pedidos-btn-produtos{
+    width: fit-content;
+    margin-top: 20px;
+}
+#cliente-pedidos .cliente-pedidos-cabecalho{
+    padding: 10px 20px;
+    color: #696969;
+    font-weight: 600;
+}
+#cliente-pedidos .cliente-pedidos-pedido{
+    padding: 15px 20px 14px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    color: #696969;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-imagem{
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-nome{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-preco{
+    font-weight: 500;
+    font-size: 15px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-caracteristicas{
+    font-size: 12px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-quantidade{
+    font-size: 12px;
+}
+#cliente-pedidos-frete-resumo-valor-total-produtos, #cliente-pedidos-frete-resumo-valor-total-frete, #cliente-pedidos-frete-resumo-valor-total-total, #cliente-pedidos-frete-resumo-valor-total-juros, #cliente-pedidos-frete-resumo-valor-total-desconto{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+}
+#cliente-pedidos-frete-resumo-valor-total-total{
+    font-weight: 600;
+    font-size: 22px;
+}
+#cliente-pedidos-frete-resumo-valor-total-valor-desconto{
+    color: green;
+}
+#cliente-pedidos-frete-resumo-valor-total-valor-juros{
+    color: firebrick;
+}
+#cliente-pedidos #cliente-pedidos-btn-voltar, #cliente-pedidos #cliente-pedidos-btn-ajuda{
+    width: fit-content;
+    margin-right: 5px;
+}
+#cliente-pedidos #cliente-pedidos-botoes li{
+    display: inline-flex;
+}
+#cliente-pedidos #cliente-pedidos-btn-boleto{
+    color: var(--cor-tema);
+}
+#cliente-pedidos #cliente-pedido-img-qrcode-pix{
+    max-width: 250px;
+    margin: 20px 0 10px 0;
+}
+#cliente-pedidos #cliente-pedido-img-qrcode-pix-asaas{
+    max-width: 250px;
+    margin: 10px 0 15px 0;
+}
+#cliente-pedidos .cliente-pedidos-resumo-status-rastreamento a{
+    display: flex;
+    align-items: center;
+}
+#cliente-pedidos .cliente-pedidos-resumo-status-rastreamento img{
+    max-width: 17px;
+}
+#cliente-pedidos #txt-copy{
+    border: 0;
+    width: 100%;
+    font-weight: bold;
+    background: transparent;
+    font-size: 11px;
+    min-height: 50px;
+}
+#cliente-pedidos #btn-copy{
+    background-color: lightslategray;
+    color: #FFF;
+    padding: 15px 20px;
+    font-size: 13px;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+#cliente-pedidos .textarea-chave-pix{
+    overflow:hidden;
+    resize: none;
+    font-size: 12px;
+}
+#cliente-pedidos .link-underline{
+    text-decoration: underline!important;
+}
+
+@media screen and (max-width: 575px){
+    #cliente-pedidos .cliente-pedidos-resumo-informacao {
+        font-size: 15px;
+    }
+    #cliente-pedidos .cliente-pedidos-resumo-status-rastreamento .cliente-pedidos-resumo-informacao{
+        display: block;
+    }
+    #cliente-pedidos .link-pagamento-asaas{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 1199px){
+    #cliente-pedidos #cliente-pedidos-resumo{
+        width: 100%;
+    }
+}

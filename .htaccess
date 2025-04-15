@@ -1,0 +1,81 @@
+RewriteEngine On 
+
+# RewriteBase /tecela-site/
+
+# REDIRECIONAMENTO REMOVIDO PARA FUNCIONAR LOCALMENTE
+
+RewriteRule ^carrinho-confirmacao/?$ carrinho-confirmacao.php
+RewriteRule ^carrinho-frete/?$ carrinho-frete.php
+RewriteRule ^carrinho-login/?$ carrinho-login.php
+RewriteRule ^carrinho-pagamento/?$ carrinho-pagamento.php
+RewriteRule ^carrinho/?$ carrinho.php
+
+RewriteRule ^cliente-acesso-confirmacao/?$ cliente-acesso-confirmacao.php
+RewriteRule ^cliente-acesso-verificacao/?$ cliente-acesso-verificacao.php
+RewriteRule ^cliente-acesso/?$ cliente-acesso.php
+RewriteRule ^cliente-cadastro-confirmacao/?$ cliente-cadastro-confirmacao.php
+RewriteRule ^cliente-cadastro/?$ cliente-cadastro.php
+RewriteRule ^cliente-dados/?$ cliente-dados.php
+RewriteRule ^cliente-enderecos-cadastro/?$ cliente-enderecos-cadastro.php
+RewriteRule ^cliente-enderecos-edicao/([0-9A-z_-]+)$ cliente-enderecos-edicao.php?id=$1
+RewriteRule ^cliente-enderecos/?$ cliente-enderecos.php
+RewriteRule ^cliente-pedido/([0-9A-z_-]+)$ cliente-pedido.php?id=$1
+RewriteRule ^cliente-pedidos/?$ cliente-pedidos.php
+RewriteRule ^cliente-orcamento/([0-9A-z_-]+)$ cliente-orcamento.php?id=$1
+RewriteRule ^cliente-orcamentos/?$ cliente-orcamentos.php
+
+RewriteRule ^contato/?$ contato.php
+RewriteRule ^localizacao/?$ localizacao.php
+
+RewriteRule ^login-alterar-senha/?$ login-alterar-senha.php
+RewriteRule ^login-recuperacao-senha-confirmacao/?$ login-recuperacao-senha-confirmacao.php
+RewriteRule ^login-recuperacao-senha/?$ login-recuperacao-senha.php
+RewriteRule ^login/?$ login.php
+RewriteRule ^logout/?$ logout.php
+
+RewriteRule ^politica-comercial/?$ politica-comercial.php
+RewriteRule ^politica-entrega/?$ politica-entrega.php
+RewriteRule ^politica-privacidade-seguranca/?$ politica-privacidade-seguranca.php
+RewriteRule ^politica-termos-uso/?$ politica-termos-uso.php
+RewriteRule ^politica-troca-devolucao/?$ politica-troca-devolucao.php
+
+RewriteRule ^produto/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)$ produto.php?cat=$1&prod=$2&id=$3 [QSA,L,NC]
+
+RewriteRule ^categoria/([0-9A-z_-]+)/([0-9A-z_-]+)$ produtos.php?cat=$1&id=$2 [QSA,L,NC]
+RewriteRule ^categoria/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)$ produtos.php?cat=$1&id=$2&pagina=$3 [QSA,L,NC]
+RewriteRule ^categoria/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)$ produtos.php?cat=$1&id=$2&pagina=$3&menor-preco=$4&maior-preco=$5&marcas=$6&caracteristicas=$7&genero-idade=$8&ordenacao=$9 [QSA,L,NC]
+RewriteRule ^categoria/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)$ produtos.php?cat=$1&id=$2&pagina=$3&menor-preco=$4&maior-preco=$5&marcas=$6&caracteristicas=$7&genero-idade=$8&ordenacao=$9&tags=$10 [QSA,L,NC]
+
+RewriteRule ^pesquisa/?$ produtos-pesquisa.php [QSA,L,NC]
+RewriteRule ^pesquisa/([0-9A-z_-]+)$ produtos-pesquisa.php?pesquisa=$1 [QSA,L,NC]
+RewriteRule ^pesquisa/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)$ produtos-pesquisa.php?pesquisa=$1&pagina=$2&cat=$3&menor-preco=$4&maior-preco=$5&marcas=$6&caracteristicas=$7&genero-idade=$8&ordenacao=$9 [QSA,L,NC]
+RewriteRule ^pesquisa/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)/([0-9A-z_-]+)$ produtos-pesquisa.php?pesquisa=$1&pagina=$2&cat=$3&menor-preco=$4&maior-preco=$5&marcas=$6&caracteristicas=$7&genero-idade=$8&ordenacao=$9&tags=$10 [QSA,L,NC]
+
+RewriteRule ^promocao/?$ produtos-promocao.php
+RewriteRule ^mais-vendidos/?$ produtos-mais-vendidos.php
+RewriteRule ^vistos-recentemente/?$ produtos-vistos-recentemente.php
+RewriteRule ^sobre/?$ sobre.php
+RewriteRule ^manutencao/?$ manutencao.php
+
+RewriteRule ^avaliacoes/?$ avaliacoes.php
+RewriteRule ^avaliacao/([0-9A-z_-]+)$ avaliacao.php?id=$1
+RewriteRule ^avaliacao-replica/([0-9A-z_-]+)$ avaliacao-replica.php?id=$1
+
+RewriteRule ^pagina/([0-9A-z_-]+)$ pagina.php?id=$1
+RewriteRule ^pedido/([0-9A-z_-]+)$ pedido.php?id=$1
+
+# PROTEGER O ARQUIVO .HTACCESS
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+  Order allow,deny
+  Deny from all
+  Satisfy all
+</Files>
+
+# DESABILITA A LISTAGEM DE PASTAS
+Options -Indexes
+
+# php -- BEGIN cPanel-generated handler, do not edit
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

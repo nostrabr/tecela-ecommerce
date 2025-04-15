@@ -1,0 +1,155 @@
+#envios #envio-acao{
+    width: fit-content;
+    position: absolute;
+    right: 210px;
+    z-index: 1;
+    top: 3px;
+    min-width: 100px;
+    font-weight: 600;
+}
+#envios #envio-acao option{
+    font-weight: 600;
+}
+#envios .custom-control{
+    padding-top: 3px;
+}
+#envios #menu-carrinho-quantidade{
+    background-color: firebrick;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    color: #FFF;
+    font-size: 12px;
+    text-align: center;
+    top: -10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#envios .custom-checkbox .custom-control-label::before, #modal-carrinho .custom-checkbox .custom-control-label::before{
+    border-radius: 0;
+    background: #FFF;
+    border: 1px solid #000;
+}
+#envios #envios-tela-detalhes{
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    z-index: 2000;
+    display: none;
+    top: 5%;
+    left: 5%;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    padding: 30px;
+    font-size: 15px;
+    overflow: auto;
+}
+#modal-visualizar-etiqueta .modal-body img{
+    max-width: 150px;
+}
+.img-visualizar{
+    max-width: 22px;
+}
+.img-excluir{
+    max-width: 18px;
+}
+.img-rastrear{
+    max-width: 18px;
+    filter: grayscale(1);
+}
+.envios-saldo-melhor-envio-simples{
+    font-size: 12px;
+}
+.envios-saldo-melhor-envio-completo #envios-saldo-melhor-envio-completo-disponivel{
+    font-size: 20px;
+    font-weight: 600;
+    color: green;
+    text-transform: uppercase;
+}
+.envios-saldo-melhor-envio-completo #envios-saldo-melhor-envio-completo-saldo{
+    font-size: 14px;
+    font-weight: 500;
+    color: green;
+    text-transform: uppercase;
+}
+.envios-saldo-melhor-envio-completo #envios-saldo-melhor-envio-completo-reservado, .envios-saldo-melhor-envio-completo #envios-saldo-melhor-envio-completo-debitos{
+    font-size: 14px;
+    font-weight: 500;
+    color: #696969;
+}
+.saldo-insuficiente{
+    color: firebrick;
+    font-weight: 500;
+}
+.saldo-suficiente{
+    color: green;
+    font-weight: 500;
+}
+.saldo-zerado{
+    font-weight: 500;
+}
+.btn-acao-pesquisar{
+    position: absolute;
+    top: 27px;
+    right: 18px;
+    padding: 2px 9px 4px;
+}
+.btn-acao-pesquisar img{
+    max-width: 20px;
+}
+#envios-opcoes{
+    margin-top: 25px;
+}
+#envios-opcoes h5{
+    color: #696969;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
+    background-color: #CCC;
+}
+
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before {
+    margin-top: -2px;
+    margin-left: unset;
+    border-radius: unset;
+}
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select-checkbox:after, table.dataTable tbody th.select-checkbox:before, table.dataTable tbody th.select-checkbox:after{
+    left: unset;
+    width: 15px;
+    height: 15px;
+}
+table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after{
+    margin-left: 2px;
+    text-shadow: 1px 1px #CCC, -1px -1px #CCC, 1px -1px #CCC, -1px 1px #CCC;
+}
+
+table.dataTable tbody td.select-checkbox-1:before, table.dataTable tbody th.select-checkbox-1:before {
+    margin-top: -2px;
+    margin-left: unset;
+    border-radius: unset;
+}
+table.dataTable tbody td.select-checkbox-1:before, table.dataTable tbody td.select-checkbox-1:after, table.dataTable tbody th.select-checkbox-1:before, table.dataTable tbody th.select-checkbox-1:after{
+    left: unset;
+    width: 15px;
+    height: 15px;
+}
+table.dataTable tr.selected td.select-checkbox-1:after, table.dataTable tr.selected th.select-checkbox-1:after{
+    margin-left: 2px;
+    text-shadow: 1px 1px #CCC, -1px -1px #CCC, 1px -1px #CCC, -1px 1px #CCC;
+}
+
+@media (max-width: 575px){
+    #envios #envio-acao {
+        position: unset;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,88 @@
+/*************/
+/* DASHBOARD */
+/*************/
+
+
+/* GERAL */
+
+.container-data-site table td{
+  padding: 0.20rem 0.25rem 0.15rem;
+  font-size: 12px;
+  font-weight: 500;
+}
+.container-data-site table th{
+  padding: 0.40rem 0.25rem 0.35rem;
+  font-size: 15px;
+  font-weight: 600;
+}
+.data-site-produto-totais, .data-site-vendas-totais{
+  padding: 10px;
+  background: #f1f1f1;
+  width: 100%;
+  border-radius: .25rem;
+}
+.data-site-produto-totais img, .data-site-vendas-totais img{
+  border-radius: .25rem;
+}
+.data-site-produto-totais-descricao, .data-site-vendas-totais-descricao{
+  line-height: 15px;
+  padding-top: 4px;
+}
+.data-site-produto-totais-total,.data-site-vendas-totais-total{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.data-site-produto-totais-legenda, .data-site-vendas-totais-legenda{
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* GOOGLE CHARTS */
+
+.google-visualization-table .gradient {
+  background-image: unset;
+  background-color: #f1f1f1;
+}
+.google-visualization-table-table{
+  border-left: 1px solid RGBA(238,238,238);
+  border-top: 1px solid RGBA(238,238,238);
+  border-radius: .25rem;
+}
+#data-site-vendas-pedidos svg, #data-site-vendas-formas-pagamento svg, #data-site-vendas-formas-entrega svg, #data-site-dispositivos svg, #data-site-resolucoes svg, #data-site-geolocalizacao-clientes-estado-mapa svg{
+  border-radius: .25rem;
+}
+
+/* GOOGLE ANALYTICS */
+
+.ActiveUsers {
+    background: #F1F1F1!important;
+    border: 1px solid #696969!important;
+    font-weight: 400!important;
+    padding: 5.5px 10px 5px 10px!important;
+    display: flex;
+    align-items: center;
+}
+.ActiveUsers-value {
+    margin-right: unset!important;
+}
+.ActiveUsers-value:before {
+  content: 'Usuários ativos: '
+}
+.Chartjs p{
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.Chartjs-figure {
+    text-align: center;
+    margin-right: 0!important;
+    margin-bottom: 0!important;
+}
+.DateRangeSelector{
+  display: inline-flex!important;
+}
+.DateRangeSelector-item label{
+  display: none;
+}

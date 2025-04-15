@@ -1,0 +1,198 @@
+/************/
+/* PRODUTOS */
+/************/
+
+#produtos{
+    background-color: var(--cor-background);
+    padding: 30px 30px 30px 30px;
+}
+#produtos h3{
+    color: #696969;
+}
+#produtos #produtos-filtros{
+    margin-top: -5px;
+    margin-bottom: 30px;
+}
+#produtos #produtos-filtros-titulo{
+    margin-bottom: 30px;
+}
+#produtos #produtos-filtros-titulo img{    
+    transform: rotate(-90deg);
+    max-width: 15px;
+    margin-top: -1px;
+    margin-right: -4px;
+    transition: 0.3s;
+}
+#produtos #produtos-filtros-titulo div{
+    padding: 2px 15px 0;
+    height: 40px;
+    width: 100%;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #696969;
+}
+#produtos #produtos-filtros .produto-filtro-ativo{
+    border: 2px solid var(--cor-tema);
+    background-color: rgb(19,168,171,0.2);
+    color: var(--cor-tema);
+    font-weight: bold;
+}
+#produtos #produtos-filtros #produtos-filtros-categorias{
+    margin-bottom: 15px;
+}
+#produtos #produtos-filtros #produtos-filtros-categorias li:first-of-type{
+    margin-bottom: -3px;
+    margin-top: 0px;
+}
+#produtos #produtos-filtros .custom-control-label{
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-left: -0.3rem;
+}
+#produtos #produtos-filtros .custom-control-label::before {
+    left: -1.10rem;
+    margin-top: -0.19rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 0px;
+}
+#produtos #produtos-filtros .custom-control-label::after {
+    left: -1.10rem;
+    margin-top: -0.19rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 0px;
+}
+#produtos #produtos-filtros .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: var(--cor-tema);
+    background-color: var(--cor-tema);
+}
+#produtos .produtos-filtros-titulo{
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0 2px;
+}
+#produtos .produtos-filtros-li-nivel-1{
+    padding-top: 10px;
+}
+#produtos .produtos-filtros-li-nivel-2{
+    padding-left: 10px;
+}
+#produtos .produtos-filtros-li-nivel-3{
+    padding-left: 20px;
+}
+#produtos .produtos-filtros-li-nivel-4{
+    padding-left: 30px;
+}
+#produtos .produtos-filtros-li-nivel-5{
+    padding-left: 40px;
+}
+#produtos .produtos-filtros-li-nivel-6{
+    padding-left: 50px;
+}
+#produtos .produtos-filtros-li-nivel-7{
+    padding-left: 60px;
+}
+#produtos .produtos-filtros-li-nivel-8{
+    padding-left: 70px;
+}
+#produtos .produtos-filtros-li-nivel-9{
+    padding-left: 80px;
+}
+#produtos .produtos-filtros-li-nivel-10{
+    padding-left: 90px;
+}
+#produtos .produtos-caracteristicas{
+    margin-bottom: 10px;
+}
+#produtos .produtos-caracteristicas-texturas{
+    max-width: 366px;
+}
+#produtos .produtos-caracteristica-textura, #produtos .produtos-caracteristica-cor{
+    max-width: 366px;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+#produtos .produtos-caracteristica-caixa-selecao{
+    padding: 2px 15px 0;
+    height: 40px;
+    min-width: 50px;
+    margin-right: 6px;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #696969;
+}
+#produtos .produto-filtro-categoria{
+    margin-right: 2px;
+}
+#produtos .produtos-caracteristicas .produtos-filtros-input-preco{
+    padding: 2px 15px 0;
+    height: 40px;
+    min-width: 50px;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #696969;
+    max-width: 90px;
+}
+#produtos .produtos-caracteristicas .produtos-filtros-separador-precos{
+    height: 100%;
+    display: flex;
+    padding: 0px 10px 5px;
+}
+#produtos .produtos-caracteristicas #select-ordenar-por{
+    padding: 0 15px;
+    height: 40px;
+    min-width: 50px;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #696969;
+}
+#produtos .produto-sem-estoque, #produtos .produto-sem-promocao, #produtos .marca-filtrada, #produtos .caracteristica-filtrada, #produtos .categoria-filtrada, #produtos .preco-filtrado{
+    display: none!important;
+}
+
+@media screen and (max-width: 575px){
+    #produtos{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+@media screen and (max-width: 1199px){
+    #produtos #produtos-filtros{
+        display: none;
+    }
+}

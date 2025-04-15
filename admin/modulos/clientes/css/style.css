@@ -1,0 +1,48 @@
+/*********************/
+/* CLIENTE ENDEREÇOS */
+/*********************/
+
+#cliente-edita .cliente-enderecos-endereco{
+    padding: 20px;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+    color: #696969;
+    position: relative;
+    transition: 0.3s;
+}
+#cliente-edita .cliente-enderecos-endereco:hover{
+    border: 1px solid #696969;
+}
+#cliente-edita .cliente-enderecos-endereco-ativo{
+    border: 1px solid #696969;
+}
+#cliente-edita .cliente-enderecos-endereco .cliente-enderecos-endereco-nome{
+    font-weight: 600;
+    font-size: 18px;
+}
+#cliente-edita .cliente-enderecos-endereco .cliente-enderecos-endereco-cep{
+    font-weight: 500;
+    font-size: 15px;
+}
+#cliente-edita .cliente-enderecos-endereco .cliente-enderecos-endereco-dados, #cliente-edita .cliente-enderecos-endereco .cliente-enderecos-endereco-cid-est{
+    font-weight: 400;
+    font-size: 15px;
+}
+#cliente-edita .cliente-enderecos-endereco .cliente-enderecos-endereco-referencia{
+    font-weight: 300;
+    font-size: 13px;
+}
+#cliente-edita .cliente-enderecos-endereco .cliente-enderecos-endereco-label-padrao{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#cliente-edita #cliente-enderecos-aviso-sem-enderecos{
+    color: #696969;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}

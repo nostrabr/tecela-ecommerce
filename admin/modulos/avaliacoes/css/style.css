@@ -1,0 +1,62 @@
+/**************/
+/* AVALIAÇÕES */
+/**************/
+
+.n-nao-lidas{
+    background-color: firebrick;
+    border-radius: 50px;
+    color: #FFF;
+    font-size: 13px;
+    text-align: center;
+    padding: 2px 8px 0px;
+    margin-left: 8px;
+}
+
+.avaliacao-loja ul{
+    display: inline-flex;
+    margin: 0px;
+}
+.avaliacao-loja img {
+    max-width: 20px;
+    margin-right: 8px;
+    filter: grayscale(1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.avaliacao-acoes{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.avaliacao-loja-geral img{
+    max-width: 35px!important;
+}
+.avaliacao-loja .img-dourada {
+    filter: grayscale(0)!important;
+}
+.img-email-nao-lido{
+    max-width: 22px;
+}
+.img-email-lido{
+    max-width: 20px;
+}
+.img-replica{
+    max-width: 22px;
+}
+.comentario-nao-lido{
+    background-color: #F1F1F1;
+}
+#admin-lista-dois{
+    width: 100%!important;
+}
+.data-replica{
+    font-size: 13px;
+    margin-top: -1px;
+    display: block;
+}
+#visualizacao-comentario-replica-titulo{
+    font-weight: 600;
+}
+#visualizacao-comentario-cliente{
+    font-weight: 600;
+}

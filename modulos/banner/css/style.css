@@ -1,0 +1,66 @@
+/***********/
+/* BANNERS */
+/***********/
+
+#banner, #banner-mobile{
+    background-color: var(--cor-background);
+    padding: var(--padding-banner-principal);
+}
+#banner .carousel, #banner .carousel-inner, #banner-mobile .carousel, #banner-mobile .carousel-inner{
+    height: auto;
+    background-color: #F3F3F3;
+}
+#banner .carousel-item img, #banner-mobile .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+#banner .carousel-indicators li, #banner-mobile .carousel-indicators li{
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+}
+#banner .carousel-indicators .active, #banner-mobile .carousel-indicators .active {
+    background: #FFF!important;
+}
+#banner #carrosel-lg .carousel-control-prev, #banner #carrosel-lg .carousel-control-next, #banner #carrosel-lg .carousel-indicators, #banner-mobile #carrosel-mobile .carousel-control-prev, #banner-mobile #carrosel-mobile .carousel-control-next, #banner-mobile #carrosel-mobile .carousel-indicators{
+    visibility: hidden;
+}
+
+/***********************/
+/* BANNERS MODO IGUAIS */
+/***********************/
+
+#banner-modo-banners-iguais{
+    background-color: var(--cor-background);
+    padding: var(--padding-banner-principal-iguais);
+    margin-left: -15px;
+    margin-right: -15px;
+}
+#banner-modo-banners-iguais .slick-dotted.slick-slider {
+    margin-bottom: unset;
+}
+#banner-modo-banners-iguais .slick-slide img{
+    margin: 0 3%;
+    border-left: 3.5px solid var(--cor-background);
+    border-right: 3.5px solid var(--cor-background);
+    border-radius: 10px;
+}
+#banner-modo-banners-iguais .slick-slide .imagem-unica{
+    margin: unset!important;
+    border-left: unset!important;
+    border-right: unset!important;
+    border-radius: 0px;
+}
+
+@media screen and (max-width: 575px){
+    #banner-mobile{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    #banner-modo-banners-iguais{
+        padding: var(--padding-banner-principal-iguais);
+    }
+}

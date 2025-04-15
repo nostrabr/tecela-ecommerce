@@ -1,0 +1,90 @@
+/**********/
+/* LOADER */
+/**********/
+
+#loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    background-color: rgba(109,109,109,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(240,240,239,1);
+}
+.wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+}
+.circle{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(109,109,109,1);
+  border-radius: 50%;
+  animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
+  transform-origin: bottom center;
+  position: relative;
+}
+@keyframes loading{
+    0%{
+      transform: translateY(0px);
+      background-color: rgba(109,109,109,1);
+    }
+    50%{
+      transform: translateY(50px);
+      background-color: rgba(240,240,239,1);
+    }
+    100%{
+      transform: translateY(0px);
+      background-color: rgba(109,109,109,1);
+    }
+}
+.circle-1{
+    animation-delay: 0.1s;
+}
+.circle-2{
+    animation-delay: 0.2s;
+}
+.circle-3{
+    animation-delay: 0.3s;
+}
+.circle-4{
+    animation-delay: 0.4s;
+}
+.circle-5{
+    animation-delay: 0.5s;
+}
+.circle-6{
+    animation-delay: 0.6s;
+}
+.circle-7{
+    animation-delay: 0.7s;
+}
+.circle-8{
+    animation-delay: 0.8s;
+}
+#loader .mensagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+#loader .mensagens .img-erro, #loader .mensagens .img-sucesso, #loader .mensagens .img-aviso{
+    display: none;
+}
+#loader .mensagens img{
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+#loader .texto{
+    width: 250px;
+}

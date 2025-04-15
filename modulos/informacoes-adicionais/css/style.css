@@ -1,0 +1,39 @@
+/**************************/
+/* INFORMAÇÕES ADICIONAIS */
+/**************************/
+
+#informacoes-adicionais-container{
+    background: var(--cor-background);
+}
+#informacoes-adicionais{
+    padding: var(--padding-informacoes-adicionais);
+}
+#informacoes-adicionais ul{
+    padding: 10px;
+}
+#informacoes-adicionais .informacoes-adicionais-icone img{
+    margin: 0px 0px -10px 10px;
+}
+#informacoes-adicionais .informacoes-adicionais-titulo{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: var(--cor-tema);
+    line-height: 19px;
+    margin-top: 5px;
+    padding: 5px;
+}
+#informacoes-adicionais .informacoes-adicionais-descricao{
+    color: #696969;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0px 5px;
+}
+
+@media screen and (max-width: 1199px){
+    #informacoes-adicionais{
+        display: none;
+    }    
+}

@@ -1,0 +1,101 @@
+#configuracoes{
+    margin-bottom: -60px;
+}
+#configuracoes .opcao{
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #696969;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+#configuracoes .opcao img{
+    max-width: 150px;
+}
+#configuracoes .opcao:hover{
+    background-color: #CCC;
+}
+.nome-configuracao{
+    height: 45px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modo-whats-desativado, .modo-whats-simples-desativado{
+    display: none;
+}
+.frete-gratis-estado{
+    width: 60px;
+}
+.bootstrap-select>.dropdown-toggle{
+    background-color: #FFF;
+    border: 1px solid #ced4da;
+}
+.bootstrap-select>.dropdown-toggle:hover{
+    outline: none!important;
+}
+.filter-option-inner-inner:focus{
+    outline: none;
+}
+.dados-pix-desativado{
+    display: none;
+}
+.faixas-desconto-botao{
+    max-width: 37px;
+    margin-right: 8px;
+}
+.remove-faixa-desconto-primeiro{
+    margin-top: 28px;
+}
+
+.valor-ou-porcentagem-primeiro{
+    margin-top: 26px;
+}
+#arvore-categorias{
+    max-height: 295px;
+    overflow-y: scroll;
+}
+
+.node-selected{
+    color: #FFFFFF!important;
+    background-color: #696969!important;
+}
+.node-arvore-categorias {
+    height: 30px;
+    font-size: 13px;
+    padding: 0!important;
+    display: flex!important;
+    align-items: center;
+    margin-bottom: 0px!important;
+}
+.admin-lista-nome-produto{
+    text-decoration: underline!important;
+    font-weight: 500;
+    opacity: 1;
+}
+.dropdown-toggle{
+    min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+@media screen and (max-width: 1024px){
+    #configuracoes{
+        margin-bottom: unset;
+    }
+    .remove-faixa-desconto-primeiro{
+        margin-top: unset;
+    }
+    
+}

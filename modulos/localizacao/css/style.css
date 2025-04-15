@@ -1,0 +1,18 @@
+/***************/
+/* LOCALIZAÇÃO */
+/***************/
+
+#localizacao{
+    background-color: var(--cor-background);
+    padding: 30px 30px 25px 30px;
+}
+#localizacao iframe{
+    width: 100%;
+}
+
+@media screen and (max-width: 575px){
+    #localizacao{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}

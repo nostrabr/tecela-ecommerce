@@ -1,0 +1,376 @@
+/***********/
+/* PRODUTO */
+/***********/
+
+#produto{
+    background-color: var(--cor-background);
+    padding: 30px 30px 60px 30px;
+}
+#produto #produto-breadcrumbs{
+    color: #CCC;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 12px;
+}
+#produto #produto-breadcrumbs a{
+    color: #CCC;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+#produto #produto-breadcrumbs a:hover{
+    color: #696969;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#produto #ultima-categoria{
+    color: #CCC;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+#produto #produto-nome h1{
+    padding-top: 10px;
+    color: #696969;
+    font-size: 50px;
+    font-weight: 500;
+    margin-left: -4px;
+}
+#produto #produto-marca, #produto #produto-sku{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #696969;
+}
+#produto #produto-preco{
+    color: var(--cor-tema);
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: -2px;
+}
+#produto .produto-container-valor-original{
+    font-size: 25px;
+    text-decoration: line-through;
+    margin-bottom: -65px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 1px;
+}
+#produto #produto-descricao, #produto #produto-tags{
+    color: #696969;
+    font-weight: 400;
+}
+#produto #produto-descricao h2, #produto #produto-tags h2{
+    display: block;
+    margin: 20px 0 10px;    
+    font-size: 20px;
+}
+#produto #produto-descricao li:last-of-type, #produto #produto-tags li:last-of-type{
+    color: #696969;
+    font-size: 15px;
+    font-weight: 400;
+}
+#produto .produto-atributo{
+    color: #696969;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 5px 0 2px;
+}
+#produto .produto-atributo-2{
+    display: none;
+}
+#produto .produto-caracteristicas{
+    margin-bottom: 10px;
+}
+#produto .produto-caracteristicas-texturas{
+    max-width: 366px;
+}
+#produto .produto-caracteristicas-texturas, #produto .produto-caracteristicas-cores, #produto .produto-caracteristicas-caixas-selecao{
+    flex-flow: row wrap;
+}
+#produto .produto-caracteristicas-lista{
+    max-width: 366px;
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 0px;
+    height: 40px;
+    color: #000;
+    padding: 0px 6px;
+}
+#produto .produto-caracteristica-textura, #produto .produto-caracteristica-cor{
+    max-width: 366px;
+    width: 55px;
+    height: 55px;
+    margin-right: 6px;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+#produto .produto-caracteristica-caixa-selecao{
+    padding: 2px 10px 0;
+    height: 55px;
+    margin-right: 5px;
+    display: inline-flex;
+    border: 1px solid #CCC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 15px;
+    font-weight: 500;
+}
+#produto .caracteristica{
+    margin-bottom: 5px;
+    min-width: 55px;
+}
+#produto .caracteristica-ativa{
+    border: 3px solid var(--cor-tema);
+    color: var(--cor-tema);
+    font-weight: bold;
+    background-size: cover;
+}
+#produto .caracteristica-desativada{
+    display: none;
+}
+#produto .caracteristica-sem-estoque{
+    opacity: 0.3;
+    cursor: default;
+}
+#produto #produto-quantidade-input{
+    max-width: 80px;
+    margin-bottom: 20px;
+    border: 1px solid #CCC;
+    border-radius: 0px;
+    height: 40px;
+    color: #000;
+}
+#produto #produto-btn-adicionar-carrinho{
+    width: 366px;
+    margin-bottom: 15px;
+}
+#produto #produto-btn-comprar{
+    width: 366px;
+    margin-bottom: 15px;
+}
+#produto #produto-btn-consultar-whatsapp{
+    width: 366px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#produto #container-calculo-frete{
+    width: 366px;
+    position: relative;
+}
+#produto #cep{
+    width: 100%;
+    margin-bottom: 10px;
+    background: #FFF;
+    color: #696969!important;
+    border: 1px solid #CCC;
+    padding: 11px 13px 10px;
+    display: block;
+    text-align: left;
+    opacity: 0.8;
+    transition: 0.2s;
+    font-weight: 500;
+}
+#produto #btn-buscar-fretes{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+    background-color: var(--cor-tema);
+    color: #FFF;
+    padding: 8px 15px 7px;
+}
+#produto #nao-sei-cep{
+    font-size: 12px;
+}
+#produto #produto-resultado-frete{
+    color: #696969;
+    font-weight: 500;
+    font-size: 12px;
+    width: 366px;
+}
+#produto .produto-tag{
+    padding: 4px 10px;
+    margin: 0px 5px 10px 0;
+    border: 1px solid var(--cor-tema);
+    color: var(--cor-tema);
+    transition: 0.2s;
+    opacity: 0.8;
+    white-space: nowrap;
+    display: inline-flex;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 12px;
+}
+#produto .produto-tag:hover{
+    background-color: var(--cor-tema);
+    color: #FFF;
+}
+#modal-imagens-produto #carousel-control-prev-container, #modal-imagens-produto #carousel-control-next-container{
+    background-color: #696969;
+    padding: 20px 20px 13px 20px;
+    border-radius: 10px;
+}
+
+/**********/
+/* SLIDER */
+/**********/
+
+.produto #galeria{
+    width: 100%;
+    height: 100%;
+}
+.produto #miniaturas{
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 700px;
+    direction: rtl;
+}
+.active{
+    cursor: grab!important;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+.produto #miniaturas ul{
+    height: 100%;    
+    width: 100%;
+}
+.produto #miniaturas .miniatura{
+    height: 16%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5.7px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.produto #miniaturas .miniatura:hover{
+    opacity: 1;
+}
+.produto #miniaturas .miniatura-ativa{
+    opacity: 1;
+    border-color: RGBA(0,0,0,0.4);
+}
+.produto #miniaturas .ultima-miniatura{
+    margin-bottom: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #CCC;
+    font-weight: 500;
+    cursor: zoom-in;
+}
+.produto #galeria #imagem-grande-container{
+    float: right;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.produto #galeria #imagem-grande{
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+#produto-zoom-container{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin: 0px 35px;
+    display: none;
+}
+#produto-zoom{
+    position: absolute;
+    right: 0px;
+    width: 91%;
+    background: #FFF;
+    z-index: 1000;
+    border: 1px solid RGBA(0,0,0,0.2);
+    height: 700px;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  width: 200px;
+  height: 200px;
+  cursor: zoom-in;
+}
+.produto .imagens-seta-esquerda{
+    position: absolute;
+    top: 335px;
+    left: 0px;
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 20px;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+.produto .imagens-seta-esquerda:hover{
+    opacity: 1;
+}
+.produto .imagens-seta-direita img{
+    transform: rotate(180deg);
+}
+.produto .imagens-seta-direita{
+    position: absolute;
+    top: 335px;
+    right: 15px;
+    background-color: #FFF;
+    cursor: pointer;
+    padding: 20px;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+.produto .imagens-seta-direita:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 575px){
+    #produto{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+@media screen and (max-width: 1199px){
+    #ultima-categoria{
+        margin-top: 15px;
+    }
+    #produto #produto-nome h1 {
+        padding-top: 5px;
+        font-size: 30px;
+        margin-left: -2px;
+    }
+    #produto #produto-marca, #produto #produto-sku {     
+        font-size: 12px;
+    }
+    #produto .produto-container-valor-original {
+        font-size: 22px;
+        margin-bottom: -60px;
+    }
+    #produto #produto-preco {
+        font-size: 35px;
+    }
+    #produto .produto-caracteristicas-texturas, #produto .produto-caracteristica-textura, #produto .produto-caracteristica-cor, #produto .produto-caracteristicas-lista {
+        max-width: 100%;
+    }
+    #produto #produto-btn-adicionar-carrinho, #produto #container-calculo-frete, #produto #produto-btn-comprar, #produto #produto-resultado-frete, #produto #produto-btn-consultar-whatsapp{
+        width: 100%;
+    }
+    .produto .imagens-seta-direita{
+        right: 0px;
+    }
+}

@@ -1,0 +1,31 @@
+/**************/
+/* MANUTENÇÃO */
+/**************/
+body{
+    margin: 0px;
+}
+#manutencao{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(../../../imagens/manutencao.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+#manutencao img{
+    max-width: 150px;
+}
+#manutencao #manutencao-texto{
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: 600;
+}

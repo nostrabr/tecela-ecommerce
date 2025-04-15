@@ -1,0 +1,36 @@
+/**********************/
+/* CATEGORIAS DESKTOP */
+/**********************/
+
+#categorias-desktop{
+    background-color: var(--cor-tema);
+    height: 60px;
+}
+#categorias-desktop .container{
+    height: 100%;
+}
+#categorias-desktop .row{
+    height: 100%;
+}
+#categorias-desktop a{    
+    color: #FFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    opacity: 1;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1500px){
+    #categorias-desktop{
+        height: 45px;
+    }    
+    #categorias-desktop a{  
+        font-size: 12px;
+    }
+}

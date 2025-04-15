@@ -1,0 +1,56 @@
+<?php 
+
+//PEGA OS DADOS DO USUÁRIO ATUAL NA SESSION
+$nivel_usuario         = filter_var($_SESSION['nivel']);
+$identificador_usuario = filter_var($_SESSION['identificador']);
+
+//SE TENTAR ACESSAR COMO USUÁRIO OU ADMINISTRADOR, DESLOGA DO SISTEMA
+if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
+    echo "<script>location.href='logout.php';</script>";
+} else if($nivel_usuario == 'M' | $nivel_usuario == 'S'){
+    $busca_google_analytics = mysqli_query($conn, 'SELECT google_tag_manager_script, google_tag_manager_noscript FROM loja WHERE id = 1'); 
+    $google_analytics       = mysqli_fetch_array($busca_google_analytics);
+}
+
+?>
+
+<!--SECTION CONFIGURAÇÕES-->
+<section id="configuracoes-google-tag-manager">
+
+    <div class="container-fluid">
+
+        <!-- ROW DO TÍTULO -->
+        <div class="row">
+            <div class="col-8">    
+                <div id="admin-titulo-pagina">Configuração do Google Tag Manager</div>
+            </div>
+            <div class="col-4 text-right">
+                <button type="button" class="btn btn-dark btn-top-right" onclick="javascript: window.location.href = 'configuracoes.php';">VOLTAR</button>
+            </div>
+        </div>
+        
+        <!-- FORM DE EDIÇÃO -->
+        <form action="modulos/configuracoes/php/edicao-google-tag-manager.php" method="POST">
+        
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="google-tag-manager-script">ID</label>
+                        <input type="text" class="form-control" name="google-tag-manager-script" id="google-tag-manager-script" value="<?= $google_analytics['google_tag_manager_script'] ?>">
+                        <small>Adicionar somente o ID do Google Tag Maneger. As tags de 'script' são adicionadas automaticamente.</small>
+                        <small>Para remover basta deixar o campo em branco.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center text-md-right">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-dark btn-bottom">SALVAR</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</section>

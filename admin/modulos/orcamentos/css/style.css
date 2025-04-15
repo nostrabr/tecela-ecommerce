@@ -1,0 +1,94 @@
+#pedidos .pedido-status{
+    font-weight: 500;
+}
+#pedido .cliente-pedidos-resumo-valores, #pedido .cliente-pedidos-resumo-forma-pagamento, #pedido .cliente-pedidos-resumo-entrega, #pedido .cliente-pedidos-resumo-status{
+    border: 1px solid #CCC;
+    padding: 15px 20px 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.3s;
+    background-color: RGBA(0,0,0,0.1);
+    border-color: #696969;
+    color: #696969;
+}
+#pedido .cliente-pedidos-resumo-informacao{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 15px;
+}
+#pedido #cliente-pedidos-btn-produtos{
+    width: fit-content;
+    margin-top: 20px;
+}
+#pedido .cliente-pedidos-cabecalho{
+    padding: 10px 20px;
+    color: #696969;
+    font-weight: 600;
+}
+#pedido .cliente-pedidos-pedido{
+    padding: 15px 20px 14px;
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    color: #696969;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-imagem{
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-nome{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-preco{
+    font-weight: 500;
+    font-size: 15px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-caracteristicas{
+    font-size: 12px;
+}
+.cliente-pedidos-produto .cliente-pedidos-produto-texto .cliente-pedidos-produto-texto-quantidade{
+    font-size: 12px;
+}
+#cliente-pedidos-frete-resumo-valor-total-produtos, #cliente-pedidos-frete-resumo-valor-total-frete, #cliente-pedidos-frete-resumo-valor-total-total, #cliente-pedidos-frete-resumo-valor-total-juros, #cliente-pedidos-frete-resumo-valor-total-desconto{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+}
+#cliente-pedidos-frete-resumo-valor-total-total{
+    font-weight: 600;
+    font-size: 22px;
+}
+#cliente-pedidos-frete-resumo-valor-total-valor-desconto{
+    color: green;
+}
+#cliente-pedidos-frete-resumo-valor-total-valor-juros{
+    color: firebrick;
+}
+#pedidos .acao-rastreamento img{
+    max-width: 20px;
+}
+#pedidos .acao-rastreamento-habilitada img{
+    filter: grayscale(1);
+}
+#pedidos .acao-rastreamento-utilizada img{
+    filter: grayscale(0);
+    opacity: 1;
+}
+#pedidos .acao-rastreamento-desabilitada img{
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 575px){
+    #pedido .cliente-pedidos-resumo-informacao {
+        font-size: 15px;
+    }
+}

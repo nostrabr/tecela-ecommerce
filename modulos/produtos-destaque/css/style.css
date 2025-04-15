@@ -1,0 +1,25 @@
+/************************/
+/* PRODUTOS EM DESTAQUE */
+/************************/
+
+#produtos-destaque{
+    background-color: var(--cor-background);
+    padding: var(--padding-produtos-destaque);
+}
+
+#produtos-destaque-produtos{
+    border-top: 1px solid #CCC;
+}
+
+@media screen and (max-width: 575px){
+    #produtos-destaque{
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: var(--padding-produtos-destaque-mobile);
+    }
+}
+@media screen and (max-width: 1199px){    
+    #produtos-destaque-produtos{
+        border-top: unset;
+    }
+}

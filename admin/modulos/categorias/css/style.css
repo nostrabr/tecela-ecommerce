@@ -1,0 +1,134 @@
+#ninho{
+	padding: 0;
+	margin-bottom: 15px;
+    margin-top: 0px;
+}
+.list-group-item:hover {
+	z-index: 0;
+}
+.list-group-item{
+    padding: 0.5rem 1.25rem;
+}
+.nested-sortable, .nested {
+	margin-top: 5px;
+}
+#ninho .nome-categoria{
+    width: 50%!important;
+	border: 0px!important;
+	text-transform: capitalize;
+} 
+.nested, .nested input {
+    background-color:#000000;
+	color: #FFF;
+	overflow: hidden;
+	cursor: move;
+}
+.nested-1, .nested-1 input {
+	background-color: #c8c9c8;
+}
+.nested-2, .nested-2 input {
+	background-color: #a5a6a5;
+}
+.nested-3, .nested-3 input {
+	background-color: #929191;
+}
+.nested-4, .nested-4 input {
+	background-color: #7a7a7a;
+}
+.nested-5, .nested-5 input {
+	background-color: #5a5b5a;
+}
+.nested-6, .nested-6 input {
+	background-color: #3c3d3c;
+}
+.nested-7, .nested-7 input {
+	background-color: #212121;
+}
+.nested-8, .nested-8 input {
+	background-color: #1C1C1C;
+}
+.nested-9, .nested-9 input {
+	background-color: #000000;
+}
+.nested-10, .nested-10 input {
+	background-color: #000000;
+}
+.ghost {
+    opacity: 0.4;
+}
+.nova-categoria{
+	background-color: #c8c9c8;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.categoria-com-imagem{
+	filter: brightness(0);
+}
+
+/* Tagging Basic Style */
+.tagging {
+	border: 1px solid #CCCCCC;
+	font-size: 1em;
+	height: auto;
+	padding: 15px 15px 5px 15px;
+	min-height: 312px;
+	border-radius: .25rem;
+}
+
+.tagging.editable {
+	cursor: text;
+}
+
+.tag {
+	background: none repeat scroll 0 0 #696969;
+	border-radius: 3px;
+	color: white;
+	cursor: default;
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	padding: 12px 30px 12px 0px;
+	margin: 0px 10px 10px 0;
+}
+
+.tag span {
+	background: none repeat scroll 0 0 #CCC;
+	border-radius: 3px 0 0 3px;
+	margin-right: 5px;
+	padding: 14px 10px 15px;
+	color: #696969;
+    font-weight: 500;
+}
+
+.tag .tag-i {
+	color: white;
+    cursor: pointer;
+    font-size: 25px;
+    height: 0;
+    line-height: 0.1em;
+    position: absolute;
+    right: 12px;
+    top: 23px;
+    text-align: center;
+    width: 10px;
+}
+
+.tag .tag-i:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.type-zone {
+	border: 0 none;
+	height: auto;
+	width: auto;
+	min-width: 20px;
+	display: inline-block;
+}
+
+.type-zone:focus {
+	outline: none;
+}

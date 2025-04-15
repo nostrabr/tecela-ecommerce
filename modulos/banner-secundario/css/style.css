@@ -1,0 +1,57 @@
+/***********************/
+/* BANNERS SECUNDÁRIOS */
+/***********************/
+
+#banner-secundario{
+    background-color: var(--cor-background);
+    padding: var(--padding-banner-secundario);
+}
+#banner-secundario .banner-secundario-item{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+#banner-secundario .banner-secundario-item img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+#banner-secundario .banner-secundario-item .banner-secundario-item-capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background-color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 575px){
+    #banner-secundario{
+        margin-left: -15px;
+        margin-right: -15px;
+        padding: var(--padding-banner-secundario-mobile);
+    }
+    #banner-secundario .banner-secundario-item .banner-secundario-item-capa{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:  1199px){
+    #banner-secundario .banner-secundario-item{
+        margin-bottom: 30px;
+    }
+}
