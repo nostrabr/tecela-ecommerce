@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
     <loc>http://localhost:8080/</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/promocao</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/vistos-recentemente</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/mais-vendidos</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/contato</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
 </url>
 <url>
     <loc>http://localhost:8080/localizacao</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
 </url>
 <url>
     <loc>http://localhost:8080/sobre</loc>
-    <lastmod>2025-04-15T17:26:59-03:00</lastmod>
+    <lastmod>2025-04-22T08:55:06-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
 </url>
@@ -96,42 +96,6 @@
         <priority>1</priority>
     </url>
 <url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/bone-azul-e-prata-aba-carmurca/7</loc>
-    <lastmod>2024-11-22T17:10:24-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bon_Azul_E_Dourado_Aba_Carmura_1_2c30fffb935d45bdbf3541516acdb4a8.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/chapeu/9</loc>
-    <lastmod>2024-01-31T11:53:29-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Chapu_1_703319cf84e02ac3eea7b3cd25f6546b.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/canivete-roos-cabo-de-madeira/10</loc>
-    <lastmod>2024-01-31T11:51:59-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Canivete_Roos_1_a0cd2ca995fd47e91c55900181ceeb28.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/facas-e-espetos/faca-8a-com-garfo/11</loc>
-    <lastmod>2022-06-15T16:29:06-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Faca_834_Com_Garfo_1_57fc2f1512c222edf2efc9fe99441e37.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
     <loc>http://localhost:8080/produto/copos-e-tacas/taca-de-cristal-para-cerveja/13</loc>
     <lastmod>2024-01-31T13:48:52-03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -159,65 +123,11 @@
     <priority>1</priority>
 </url>
 <url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/bomba-de-chimarrao/16</loc>
-    <lastmod>2024-01-31T11:28:51-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bomba_De_Chimarro_1_0b8be8d6e0f8e2269a4e13d241792a37.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/utensilios-para-churrasco/faca-e-garfo-para-churrasco/17</loc>
-    <lastmod>2023-03-14T09:38:08-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Churrasco_Tramontina_1_876bcd59d30c6f1d558fc861ade9f504.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/cuia-de-chimarrao/18</loc>
-    <lastmod>2024-01-31T11:59:34-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Cuia_De_Chimarro_1_7c8b5dde0f86fd2e4db52a067e9dff5a.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/garrafa-termica-inox-1-litro-com-case/19</loc>
-    <lastmod>2024-04-16T15:19:35-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Garrafa_Trmica_Inox_1_Litro_1_14670bd7b95aeff5cd7b079ae0895a4f.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/copos-e-tacas/copo-termico-inox-270ml/20</loc>
-    <lastmod>2024-04-05T15:21:19-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Copo_Trmico_Inox_270Ml_1_b89fe59d3e844c5754cab277ac2e065b.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
     <loc>http://localhost:8080/produto/chimarrao-e-terere/kit-terere-em-inox-25l/21</loc>
     <lastmod>2025-04-01T08:24:47-03:00</lastmod>
     <changefreq>daily</changefreq>
     <image:image>
         <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Terer_Em_Inox_25L_1_a02bcd41d0ad078ecb0a1805ed616cdb.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/caderno-96-folhas/22</loc>
-    <lastmod>2024-01-31T11:47:20-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Caderno_96_Folhas_1_c8b6b94a0e096c375e2e8036733f002a.jpg</image:loc>
     </image:image>
     <priority>1</priority>
 </url>
@@ -231,56 +141,11 @@
     <priority>1</priority>
 </url>
 <url>
-    <loc>http://localhost:8080/produto/bebidas/cachaca-artesanal-700ml/24</loc>
-    <lastmod>2024-04-16T15:42:12-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Cachaa_Artesanal_700Ml_1_05dc8b2dd24af28a6ea392c052326b5c.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/bone-camurca-bege-aba-e-frente/28</loc>
-    <lastmod>2024-11-22T17:10:52-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bon_Camura_Aba_E_Frente_2_ec42c797ed2f1fe02db713d0acdda2ab.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/bone-preto/29</loc>
-    <lastmod>2024-01-31T11:40:57-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bon_Preto_1_ce2c46af1bfcd0733a6ddca56e3cef1f.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
     <loc>http://localhost:8080/produto/acessorios/porta-copo-mdf/31</loc>
     <lastmod>2024-01-31T13:50:00-03:00</lastmod>
     <changefreq>daily</changefreq>
     <image:image>
         <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_4X_Porta_Copo_Mdf_2_7b9796113de2cee689253011f170cf34.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/canivete-roos-inox/33</loc>
-    <lastmod>2022-11-23T10:52:28-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Canivete_Roos_Inox_4_6adec45b01ddc8bdbd2418bb3648350e.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/bone-camurca-rosa-aba/34</loc>
-    <lastmod>2024-01-31T11:38:01-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bon_Camura_Rosa_Aba_E_Frente_1_4119644bc3585a41a602d1b46d034f94.png</image:loc>
     </image:image>
     <priority>1</priority>
 </url>
@@ -303,24 +168,6 @@
     <priority>1</priority>
 </url>
 <url>
-    <loc>http://localhost:8080/produto/facas-e-espetos/faca-5a-com-garfo/39</loc>
-    <lastmod>2023-03-14T09:37:12-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Faca_534_Com_Garfo_3_d79cfcb4693088745761058098dd9f49.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/kit-canivete-chapeu/42</loc>
-    <lastmod>2024-09-09T10:12:11-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Canivete_Chapu_1_0938284d01d4827fe1856f303cedf5f0.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
     <loc>http://localhost:8080/produto/chimarrao-e-terere/termica-plastica-1l-acabamento-em-couro/45</loc>
     <lastmod>2025-03-12T08:31:45-03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -330,92 +177,11 @@
     <priority>1</priority>
 </url>
 <url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/bone-camurca-marrom-e-preto-silkado/46</loc>
-    <lastmod>2024-01-31T11:36:23-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bon_Camura_Marrom_E_Preto_Silkado_1_115e44b90fe1d80cddeb78392c514074.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bones-e-chapeus/bone-camurca-bege-e-marrom-silkado/47</loc>
-    <lastmod>2024-01-31T11:34:02-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Bon_Camura_Bege_E_Marom_Silkado_1_c74672cf05c910eac438a0edf51642dc.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/copos-e-tacas/copo-termico-270ml/48</loc>
-    <lastmod>2024-04-22T10:30:42-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Copo_Trmico_270Ml_1_784f2e70028e31e50970189498643c77.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/facas-e-espetos/faca-com-cabo-de-resina-semente/49</loc>
-    <lastmod>2024-04-22T10:34:32-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Faca_Com_Cabo_De_Resina_Semente_3_2c2c4537a40566755cf6e6fed4766baf.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/chaveiro-abridor-e-canivete/50</loc>
-    <lastmod>2024-11-22T17:20:58-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Chaveiro_3_fe329fed4de78eeb246dbbeb80c888a5.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
     <loc>http://localhost:8080/produto/chimarrao-e-terere/porta-cuia-roos/51</loc>
     <lastmod>2024-11-22T17:15:01-03:00</lastmod>
     <changefreq>daily</changefreq>
     <image:image>
         <image:loc>http://localhost:8080/imagens/produtos/grande/Porta_Cuia_Roos_2_a57b6c3670d2813c1bc0f907767e4b9b.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bebidas/kit-cachaca-50ml/52</loc>
-    <lastmod>2024-04-22T10:37:27-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Cachaa_50Ml_2_74eeefd22b7ca15cc4cb4afc126bba71.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/cuia-com-porta-cuia-em-inox/53</loc>
-    <lastmod>2024-11-22T17:24:55-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Cuia_Com_Porta_Cuia_Em_Inox_1_59e51644022344e7522dd237be0f8b2c.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/garrafa-termica-inox-1-litro/54</loc>
-    <lastmod>2024-04-22T10:35:27-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Garrafa_Trmica_Inox_1_Litro_2_6eae7352de81fc21556418b086d3c76e.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/bebidas/kit-gin-com-taca/55</loc>
-    <lastmod>2024-04-22T10:38:19-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Gin_Com_Taa_1_7c6105bc3303284fb2325bef58a3d4df.png</image:loc>
     </image:image>
     <priority>1</priority>
 </url>
@@ -438,15 +204,6 @@
     <priority>1</priority>
 </url>
 <url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/cuia-com-pe-de-metal/60</loc>
-    <lastmod>2025-04-04T12:00:03-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Cuia_Com_P_De_Metal_1_656f483347310b6440b2b5e79bf82a2a.jpeg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
     <loc>http://localhost:8080/produto/sub-teste/produto-teste/61</loc>
     <lastmod>2025-04-15T16:57:56-03:00</lastmod>
     <changefreq>daily</changefreq>
@@ -461,6 +218,15 @@
     <changefreq>daily</changefreq>
     <image:image>
         <image:loc>http://localhost:8080/imagens/produtos/grande/</image:loc>
+    </image:image>
+    <priority>1</priority>
+</url>
+<url>
+    <loc>http://localhost:8080/produto/sub-teste/produto-teste/63</loc>
+    <lastmod>2025-04-22T08:54:59-03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+        <image:loc>http://localhost:8080/imagens/produtos/grande/Produto_Teste_1_3a59c18db89b4e24a485494437cc0a4b.png</image:loc>
     </image:image>
     <priority>1</priority>
 </url></urlset>
