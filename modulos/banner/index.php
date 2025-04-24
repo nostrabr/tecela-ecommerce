@@ -83,7 +83,7 @@ if($n_banners > 0){
 
         <div class="slider slider-modo-banners-iguais">
             <?php for($i=0;$i<$n_banners;$i++){ ?>
-                <img id="banner-mobile-<?= $array_banners[$i]["imagem_desktop"] ?>" class="carousel-item <?php if($i == 0){ echo 'active'; } ?> <?php if($array_banners[$i]['link'] != ''){ echo 'cursor-pointer'; } ?>" src="<?= $loja['site'] ?>imagens/banners/original/<?= $array_banners[$i]["imagem_desktop"] ?>" <?php if($array_banners[$i]['link'] != ''){ ?> onclick="javascript: window.location.href = '<?= $array_banners[$i]['link'] ?>';" <?php } ?> alt="<?= $array_banners[$i]['link'] ?>">
+                <img style="border-radius: 0 !important;" id="banner-mobile-<?= $array_banners[$i]["imagem_desktop"] ?>" class="carousel-item <?php if($i == 0){ echo 'active'; } ?> <?php if($array_banners[$i]['link'] != ''){ echo 'cursor-pointer'; } ?>" src="<?= $loja['site'] ?>imagens/banners/original/<?= $array_banners[$i]["imagem_mobile"] ?>" <?php if($array_banners[$i]['link'] != ''){ ?> onclick="javascript: window.location.href = '<?= $array_banners[$i]['link'] ?>';" <?php } ?> alt="<?= $array_banners[$i]['link'] ?>">
             <?php } ?>
         </div>
 

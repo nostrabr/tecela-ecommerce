@@ -29,87 +29,12 @@ function urlCategoria($nome){
 
         <div class="row">
 
-            <div class="col"><a id="categorias-desktop-btn-vertudo" href="javascript: abreFechaCategoriasEscondidas();">Ver tudo <i id="categorias-desktop-chevron-vertudo" class="fas fa-angle-down"></i></a></div>
-
-            <?php 
-            
-            while($categoria = mysqli_fetch_array($categorias)){ 
-                
-                $busca_subcategorias = mysqli_query($conn, "SELECT id, nome FROM categoria WHERE pai = '".$categoria['id']."' ORDER BY nivel, ordem");
-
-                if(mysqli_num_rows($busca_subcategorias) > 0){
-                    $tem_subcategoria = true;
-                } else {
-                    $tem_subcategoria = false;
-                }
-                
-            ?>
-                
-                <div id="categorias-desktop-categoria-<?= $categoria['id'] ?>" class="col categorias-desktop-categoria" id-categoria='<?= $categoria['id'] ?>'><a href="<?= $loja['site'] ?>categoria/<?= urlCategoria($categoria['nome']).'/'.$categoria['id'] ?>" alt="<?= $categoria['nome'] ?>"><?= $categoria['nome'] ?> <?php if($tem_subcategoria){ ?><i class="fas fa-caret-down"></i><?php } ?></a></div>
-
-                <?php 
-
-                    if($tem_subcategoria){ ?>
-                        
-                        <div id="categorias-desktop-subcategoria-<?= $categoria['id'] ?>" class="categorias-desktop-subcategoria">
-                            <ul>
-                                <?php while($subcategoria = mysqli_fetch_array($busca_subcategorias)){ ?>
-                                    <li><a href="<?= $loja['site'].'categoria/'.urlCategoria($subcategoria['nome']).'/'.$subcategoria['id'] ?>"><?= $subcategoria['nome'] ?></a></li>
-                                <?php } ?>
-                            </ul>
-                        </div>
-
-                    <?php }
-
-                ?>
-
-            <?php } ?>
-
-            <div id="categorias-desktop-categoria-0" class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>categoria/todas/0" alt="Todas Categorias">TODAS</a></div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section id="categorias-desktop-escondidas">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="categorias-desktop-escondidas-container">
-
-            <?php 
-
-                $categorias = mysqli_query($conn, "SELECT id, nome FROM categoria WHERE nivel = 1 ORDER BY nivel, ordem ASC");
-                $contador   = 0;
-
-                while($categoria = mysqli_fetch_array($categorias)){ $contador++;                    
-
-                    ?>
-
-                    <ul class="col"><li class="categorias-desktop-escondidas-categoria"><a href="<?= $loja['site'].'categoria/'.urlCategoria($categoria['nome']).'/'.$categoria['id'] ?>"><?= $categoria['nome'] ?></a></li><?php
-
-                        $busca_subcategorias = mysqli_query($conn, "SELECT id, nome FROM categoria WHERE pai = '".$categoria['id']."' ORDER BY nivel, ordem");
-                        if(mysqli_num_rows($busca_subcategorias) > 0){ ?>
-                            
-                            <?php while($subcategoria = mysqli_fetch_array($busca_subcategorias)){ ?>
-                                <li class="categorias-desktop-escondidas-subcategoria"><a href="<?= $loja['site'].'categoria/'.urlCategoria($subcategoria['nome']).'/'.$subcategoria['id'] ?>"><?= $subcategoria['nome'] ?></a></li>
-                            <?php } ?>
-
-                        <?php } ?>
-
-                    </ul>
-
-                <?php } ?>
-
-                <ul class="col">
-                    <li class="categorias-desktop-escondidas-categoria"><a href="<?= $loja['site'].'categoria/todas/0' ?>">VER TODOS PRODUTOS</a></li>
-                </ul>
-
-            </div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Home</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Quem Somos</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Segmento</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Produtos</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Contato</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Trabalhe Conosco</a></div>
 
         </div>
 

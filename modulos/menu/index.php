@@ -144,11 +144,16 @@
                         ?><li class="mb-2"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>cliente-cadastro">CADASTRO</a></li><?php
                     }                    
                 ?>   
+
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Home</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Quem Somos</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Segmento</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Produtos</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Contato</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Trabalhe Conosco</a></li>
+                
             </ul>
-            <ul>  
-                <!-- <li class="menu-mobile-titulo">PRODUTOS</li> -->
-                <li><div class="text-capitalize" id="arvore-categorias"></div></li>
-            </ul>
+           
         </div>
 
     </section>
