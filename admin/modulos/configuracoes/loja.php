@@ -245,31 +245,6 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
             
             <hr>            
 
-            <div class="row admin-subtitulo">
-                <div class="col-12">reCAPTCHA</div>
-                <div class="col-12"><small>Para configurar seu reCAPTCHA para o formulário de contato acesse o <a href="https://www.google.com/recaptcha/admin" target="_blank">site do Google reCAPTCHA</a> para gerar as chaves de integração e configura-las nos campos abaixo.</small></div>
-                <div class="col-12"><small>O formato aceito pelo site é o <b>reCAPTCHA v2 - Caixa de seleção "Não sou um robô"</b></small></div>
-                <div class="col-12"><small>Para desinstalar, basta deixar os campos de configuração em branco.</small></div>
-                <div class="col-12"><small><b>Observação importante: Caso as chaves estejam configuradas erradas, o formulário de contato e cadastro do cliente não irão funcionar.</b></small></div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="form-group">
-                        <label for="google-recaptcha-chave-site">Chave do site</label>
-                        <input type="text" class="form-control" name="google-recaptcha-chave-site" id="google-recaptcha-chave-site" maxlength="50" value="<?= $loja['recaptcha'] ?>">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="form-group">
-                        <label for="google-recaptcha-chave-secreta">Chave secreta</label>
-                        <input type="password" class="form-control" name="google-recaptcha-chave-secreta" id="google-recaptcha-chave-secreta" maxlength="50" value="<?= $loja['recaptcha_secret'] ?>">
-                    </div>
-                </div>
-            </div>
-
-            <hr>            
-                
             <div class="row admin-subtitulo"><div class="col-12">Outros</div></div>
 
             <div class="row mb-2">                            

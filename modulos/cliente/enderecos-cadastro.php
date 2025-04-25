@@ -1,6 +1,14 @@
 <!--CSS-->
 <link rel="stylesheet" href="modulos/cliente/css/style.css">
 
+<!-- Adiciona o script para máscara de CEP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#cep").mask("00000-000"); // Aplica a máscara ao campo de CEP
+    });
+</script>
+
 <?php
 
 //VERIFICA SE TEM ALGUM CEP SELECIONADO EM SESSION
@@ -60,7 +68,7 @@ if(isset($_SESSION["CEP"])){
             <div class="col-12 col-xl-4">
                 <div class="form-group">
                     <label for="cep">CEP <span class="campo-obrigatorio">*</span></label>
-                    <input type="text" name="cep" maxlength="10" minlength="10" id="cep" class="form-control" value="<?= $cep ?>" onkeyup="javascript: buscaEndereco(this.value);" required>
+                    <input type="text" name="cep" maxlength="10" minlength="10" id="cep" class="form-control" value="<?= $cep ?>" required>
                     <small>Digite o seu CEP e o sistema buscará o endereço para você</small>
                 </div>              
             </div>                   

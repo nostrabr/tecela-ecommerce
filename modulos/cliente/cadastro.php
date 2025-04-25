@@ -46,6 +46,7 @@ if(isset($_SESSION['RETORNO'])){
                     <label for="celular">Celular <span class="campo-obrigatorio">*</span></label>
                     <input type="text" name="celular" id="celular" class="form-control" required>
                 </div>                         
+
                 <div class="form-group">
                     <label for="email">E-mail <span class="campo-obrigatorio">*</span></label>
                     <input type="email" name="email" id="email" maxlength="50" class="form-control text-lowercase" required>
@@ -58,11 +59,7 @@ if(isset($_SESSION['RETORNO'])){
                     <input type="checkbox" class="custom-control-input" id="cliente-cadastro-checkbox-aceite-termos" name="aceite-termos" required>
                     <label class="custom-control-label" id="cliente-cadastro-label-aceite-termos" for="cliente-cadastro-checkbox-aceite-termos">Aceito os <a href="politica-termos-uso" target="_blank">Termos e condições</a> e autorizo o uso de meus dados de acordo com a <a href="politica-privacidade-seguranca" target="_blank">Política de privacidade</a>.</label>
                 </div>     
-                <?php if($loja['recaptcha'] != ''){ ?>
-                    <div class="form-group mt-2">
-                        <div class="g-recaptcha" data-sitekey="<?= $loja['recaptcha'] ?>"></div>
-                    </div>
-                <?php } ?>    
+                <?php // Removido o bloco do reCAPTCHA ?>
                 <div class="form-group mt-3">
                     <input id="cliente-cadastro-btn-continuar" type="submit" class="btn-escuro" value="Continuar">
                 </div>
@@ -77,8 +74,5 @@ if(isset($_SESSION['RETORNO'])){
 <!--SCRIPTS-->
 <script type="text/javascript" src="modulos/cliente/js/scripts.js"></script>
 
-<?php if($loja['recaptcha'] != ''){ ?>
-    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
-<?php } ?>
-
+<?php // Removido o script do reCAPTCHA ?>
 <?php /* LIMPA A SESSION DE RETORNO */ unset($_SESSION['RETORNO']); ?>
