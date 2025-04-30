@@ -40,13 +40,14 @@ if(mysqli_num_rows($busca_produtos) > 0){
 <link rel="stylesheet" href="<?= $loja['site'] ?>modulos/produtos-novos/css/style.css">
 
 <!--PRODUTOS-->
-<section id="produtos-novos">
+<section id="produtos-novos" class="py-5" style="background-image: url('<?= $loja['site'] ?>imagens/bg-produto-home.png');">
 
     <div id="produtos-novos-produtos">
     
         <h2 class="d-none">Produtos lançamento</h2>
 
-        <div class="titulo-section">LANÇAMENTOS</div>
+        <div class="text-center"><img style="width: 50px; margin-bottom: -25px;" src='<?= $loja['site']?>imagens/ico-lancamento.png'></div>
+        <div class="titulo-section mt-0 text-white">LANÇAMENTOS</div>
 
         <div class="row slider slider-produtos-novos">
 
@@ -190,11 +191,11 @@ if(mysqli_num_rows($busca_produtos) > 0){
                                         <span class="produto-container-esgotado">#Esgotado</span>
                                     <?php } ?>
                                 </li>
-                                <li class="produto-container-categoria"><h3><?= $produto['produto_categoria'] ?></h3></li>
-                                <li class="produto-container-nome"><h4><?= $produto['produto_nome'] ?></h4></li>
-                                <li class="produto-container-valor"><?= $produto_preco_final ?></li>
+                                <li class="produto-container-categoria"><h3 style="color: #1C4A50; font-weight: bold;">Linha: <span style="color: #DC582A;"><?= $produto['produto_categoria'] ?></span></h3></li>
+                                <li class="produto-container-nome"><h4 style="color: #1C4A50;"><?= $produto['produto_nome'] ?></h4></li>
+                                <li class="produto-container-valor"><button id="ver-produto">Acessar produto</button></li>
                                 <?php if(base64_encode(base64_decode($produto['produto_descricao'], true)) === $produto['produto_descricao']){ $produto_descricao = base64_decode($produto['produto_descricao']); } else { $produto_descricao = $produto['produto_descricao']; } ?>
-                                <li class="produto-container-descricao"><?= str_replace('<br />', '', $produto_descricao) ?></li>
+                                <li class="produto-container-descricao" style="color: #1C4A50;"><?= str_replace('<br />', '', $produto_descricao) ?></li>
                             </ul>      
                         </div>  
                     </div>                          

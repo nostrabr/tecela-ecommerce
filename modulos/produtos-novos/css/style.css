@@ -3,8 +3,19 @@
 /******************/
 
 #produtos-novos{
-    background-color: var(--cor-background);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: var(--padding-produtos-novos);
+}
+
+#ver-produto{
+    padding: 10px 30px !important;
+    color: white !important;
+    background-color: #DC582A !important;
+    border-radius: 10px !important;
+    border: none;
+    font-size: 14px !important;
 }
 
 #produtos-novos-produtos{

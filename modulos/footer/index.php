@@ -89,7 +89,7 @@
 </style>
 
 <!--FOOTER-->
-<footer id="footer-new" class="mt-5 px-4 px-lg-0">
+<footer id="footer-new" class="px-4 px-lg-0" style="margin-left: -15px; margin-right: -15px;">
 
     <div class="w-100 text-start text-lg-center"><img src='<?= $loja['site'] ?>imagens/logo.png' alt='Logo' class='logo-footer'></div>
 

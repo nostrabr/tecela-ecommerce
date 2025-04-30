@@ -4,7 +4,7 @@
 
 #banner, #banner-mobile{
     background-color: var(--cor-background);
-    padding: var(--padding-banner-principal);
+    /* padding: var(--padding-banner-principal); */
 }
 #banner .carousel, #banner .carousel-inner, #banner-mobile .carousel, #banner-mobile .carousel-inner{
     height: auto;
@@ -35,7 +35,7 @@
 
 #banner-modo-banners-iguais{
     background-color: var(--cor-background);
-    padding: var(--padding-banner-principal-iguais);
+    /* padding: var(--padding-banner-principal-iguais); */
     margin-left: -15px;
     margin-right: -15px;
 }
@@ -61,6 +61,6 @@
         margin-right: -15px;
     }
     #banner-modo-banners-iguais{
-        padding: var(--padding-banner-principal-iguais);
+        /* padding: var(--padding-banner-principal-iguais); */
     }
 }
