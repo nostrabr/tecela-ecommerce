@@ -4,12 +4,8 @@
 
 #sobre{
     background-color: var(--cor-background);
-    padding: 40px 30px 50px 30px;
-    color: #696969;
-}
-#sobre img{
-    width: 100%!important;
-    height: auto!important;
+    padding: 70px 30px 70px 30px !important;
+    background-color: white;
 }
 #sobre h2{
     margin-bottom: 20px;

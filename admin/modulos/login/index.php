@@ -27,23 +27,7 @@ $loja       = mysqli_fetch_array($busca_loja);
     <meta name="description" content="<?= $loja['nome'] ?> - Admin">
     
     <!--ICONS-->
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= $loja['site'] ?>imagens/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="<?= $loja['site'] ?>imagens/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?= $loja['site'] ?>imagens/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?= $loja['site'] ?>imagens/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?= $loja['site'] ?>imagens/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?= $loja['site'] ?>imagens/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?= $loja['site'] ?>imagens/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="<?= $loja['site'] ?>imagens/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $loja['site'] ?>imagens/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="<?= $loja['site'] ?>imagens/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $loja['site'] ?>imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?= $loja['site'] ?>imagens/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $loja['site'] ?>imagens/favicon-16x16.png">
-    <link rel="manifest" href="<?= $loja['site'] ?>imagens/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="<?= $loja['site'] ?>imagens/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="<?= $loja['site'] ?>imagens/favicon.png" type="image/x-icon">
     
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -78,7 +62,7 @@ $loja       = mysqli_fetch_array($busca_loja);
                                     <div>
                                         <ul>
                                             <li class="text-center"><img id="login-acesso-img" src="<?= $loja['site'] ?>imagens/logo-admin.png"></li>
-                                            <li><p>PAINEL ADMINISTRATIVO</p></li>
+                                            <li><p class="text-white">PAINEL ADMINISTRATIVO</p></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -90,18 +74,18 @@ $loja       = mysqli_fetch_array($busca_loja);
                                     <div class="w-100">
                                         <div class="form-group row">
                                             <div class="col-12">
-                                                <label for="form-login">Login:</label>
+                                                <label for="form-login" class="text-white">Login:</label>
                                                 <input type="text" class="form-control form-control-lg form-control" id="form-login" name="login">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-12">
-                                                <label for="form-senha">Senha:</label>
+                                                <label for="form-senha" class="text-white">Senha:</label>
                                                 <input type="password" class="form-control form-control-lg" id="form-senha" name="senha">
                                             </div>
                                         </div>
                                         <div id="esqueceu-senha">
-                                            <a href="javascript: geraNovaSenha();">Esqueceu sua senha?</a>
+                                            <a href="javascript: geraNovaSenha();" class="text-white">Esqueceu sua senha?</a>
                                         </div>
                                         <div class="form-group row justify-content-center">
                                             <button type="button" class="mt-3 mt-md-4" id="form-button">ENTRAR</button>

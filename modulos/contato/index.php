@@ -1,92 +1,73 @@
-<!--CSS-->
-<link rel="stylesheet" href="modulos/contato/css/style.css">
-
-<?php 
-
-//RETORNO DO FORM
-if(isset($_SESSION['RETORNO'])){
-    if($_SESSION['RETORNO']['STATUS-EMAIL'] == 'EMAIL-ENVIADO'){
-        echo "<script>mensagemAviso('sucesso', 'E-mail enviado com sucesso. Em breve responderemos sua solicitação.', 3000);</script>";
-    } else if($_SESSION['RETORNO']['STATUS-EMAIL'] == 'ERRO-CAPTCHA'){
-        echo "<script>mensagemAviso('erro', 'Erro ao processar reCAPTCHA. Tente novamente.', 3000);</script>";
-    } else if($_SESSION['RETORNO']['STATUS-EMAIL'] == 'ERRO-CAMPOS-BRANCO'){
-        echo "<script>mensagemAviso('erro', 'Preencha todos os campos e o reCAPTCHA para prosseguir.', 3000);</script>";
-    } else {
-        echo "<script>mensagemAviso('erro', 'Erro ao enviar e-mail! Se o problema persistir contate o administrador do sistema.', 3000);</script>";
+<style>
+    #container-contato{
+        background-image: url('<?= $loja['site']; ?>imagens/banner-contato.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-}
 
-?>
+    .title-contato{
+        color: #fff;
+        font-size: 35px;
+        width: 500px;
+        font-weight: 600;
+    }
 
-<!--CONTATO-->
-<section id="contato">
+    .container-contatos-infos{
+        width: 1000px;
+    }
 
-    <h1 class="d-none">Contato</h1>
-    
-    <p class="mb-0"><b>Precisa falar conosco?</b></p>
-    <p>Escolha uma das formas de contato listadas abaixo que teremos o prazer em lhe ajudar.</p>
+    @media(max-width:992px){
+        #container-contato{
+            margin-right: -15px;
+            margin-left: -15px;
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+        .title-contato{
+            font-size: 21px;
+            width: 90% !important;
+        }
+    }
+</style>
 
-    <?php if($loja['telefone'] != ''){ ?>
-        <label for="contato-btn-telefone">Telefone</label>
-        <p id="contato-telefone">
-            <a id="contato-btn-telefone" href="tel:+55<?= preg_replace("/[^0-9]/", "", $loja['telefone']) ?>" title="Ligar para a loja">
-            <img src="imagens/telefone-escuro.png" alt="Telefone"> <?= $loja['telefone'] ?>
-            </a>
-        </p>
-    <?php } ?>
 
-    <label for="contato-btn-whatsapp">WhatsApp</label>
-    <p id="contato-whatsapp">
-        <a id="contato-btn-whatsapp" href="https://wa.me/55<?= preg_replace("/[^0-9]/", "", $loja['whatsapp']) ?>?text=Atendimento%20online%20%7C%20Ol%C3%A1%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es..." title="Chamar no Whats" target="_blank">
-        <img src="imagens/whatsapp-escuro.png" alt="WhatsApp"> <?= $loja['whatsapp'] ?>
-        </a>
-    </p>
-    
-    <label for="contato-redes-sociais">Redes Sociais</label>
-    <ul id="contato-redes-sociais">
-        <?php if($loja['facebook'] != ''){ ?><li class="contato-redes-sociais-li"><a id="contato-btn-facebook" class="mr-1" href="<?= $loja['facebook'] ?>" target="_blank" title="Visitar Facebook"><img src="imagens/facebook-escuro.png" alt="Facebook"></a></li><?php } ?>
-        <?php if($loja['instagram'] != ''){ ?><li class="contato-redes-sociais-li"><a id="contato-btn-instagram" class="mr-1" href="<?= $loja['instagram'] ?>" target="_blank" title="Visitar Instagram"><img src="imagens/instagram-escuro.png" alt="Instagram"></a></li><?php } ?>
-        <?php if($loja['twiter'] != ''){ ?><li class="contato-redes-sociais-li"><a id="contato-btn-twitter" class="mr-1" href="<?= $loja['twiter'] ?>" target="_blank" title="Visitar Twitter"><img src="imagens/twitter-escuro.png" alt="Twitter"></a></li><?php } ?>
-        <?php if($loja['youtube'] != ''){ ?><li class="fcontato-redes-sociais-li"><a id="contato-btn-youtube" class="mr-1" href="<?= $loja['youtube'] ?>" target="_blank" title="Visitar YouTube"><img src="imagens/youtube-escuro.png" alt="YouTube"></a></li><?php } ?>
-        <?php if($loja['pinterest'] != ''){ ?><li class="contato-redes-sociais-li"><a id="contato-btn-pinterest" class="mr-1" href="<?= $loja['pinterest'] ?>" target="_blank" title="Visitar Pinterest"><img src="imagens/pinterest-escuro.png" alt="Pinterest"></a></li><?php } ?>
-        <?php if($loja['tiktok'] != ''){ ?><li class="contato-redes-sociais-li"><a id="contato-btn-tiktok" href="<?= $loja['tiktok'] ?>" target="_blank" title="Visitar TikTok"><img src="imagens/tiktok-escuro.png" alt="TikTok"></a></li><?php } ?>
-    </ul>
-    
-    <p class="mt-4 mb-0"><b>Formulário</b></p>
-    <p class="mb-0">Se preferir nos enviar um e-mail, preencha o formulário abaixo com seus dados de contato que em breve retornaremos.</p>
-    
-    <form action="<?php if($loja['recaptcha'] != ''){ ?>modulos/contato/php/recaptcha.php<?php } else { ?>modulos/envio-email/index.php<?php } ?>" method="POST">       
-        <input type="hidden" name="tipo-envio" value="formulario-contato" required>
-        <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" class="form-control text-capitalize" required>
-        </div>
-        <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" class="form-control text-lowercase" required>
-        </div>
-        <div class="form-group">
-            <label for="celular">Telefone</label>
-            <input type="text" name="telefone" id="celular" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" class="form-control" rows="5" required></textarea>
-        </div>
-        <?php if($loja['recaptcha'] != ''){ ?>
-            <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="<?= $loja['recaptcha'] ?>"></div>
+<section class="py-5 px-2 px-lg-5" id="container-contato">
+    <div class="container-contato-infos">
+        <h2 class="mb-5 title-contato"><strong>Soluções</strong> em uniformes e vestuário para fortalecer a imagem da sua <strong>empresa</strong>.</h2>
+
+        <div class="row container-contatos-infos">
+            <div class="order-1 order-lg-1 d-flex align-items-start col-12 col-lg-3 mb-5">
+                <img style="width: 30px;" src='<?= $loja['site'] ?>imagens/contato-wpp.png'>
+                <div class="d-flex flex-column ml-3">
+                    <a href="" class="text-white mb-2">(54) 99132-4215</a>
+                </div>
             </div>
-        <?php } ?>
-        <div class="form-group">
-            <input class="btn" type="submit" name="contato-btn-enviar-formulario" value="Enviar">
+
+            <div class="order-2 order-lg-2 d-flex align-items-start col-12 col-lg-4 mb-5">
+                <img style="width: 30px;" src='<?= $loja['site'] ?>imagens/contato-email.png'>
+                <div class="d-flex flex-column ml-3">
+                    <a href="" class="text-white mb-2">tecela@tecela.com.br</a>
+                    <a href="" class="text-white">comercial@tecela.com.br</a>
+                </div>
+            </div>
+
+            <div class="order-4 order-lg-3 col-12 col-lg-4 mb-0 mb-lg-5">
+                <h6 class="fw-bold text-white mb-4">Nos acompanhe nas redes</h6>
+                <div class="d-flex">
+                    <a href=""><img style="height: 30px;" class="mr-4" src='<?= $loja['site'] ?>imagens/contato-insta.png'></a>
+                    <a href=""><img style="height: 30px;" src='<?= $loja['site'] ?>imagens/contato-fb.png'></a>
+                </div>
+            </div>
+
+            <div class="order-3 order-lg-4 d-flex align-items-start col-12 col-lg-4 mb-5">
+                <img style="width: 30px;" src='<?= $loja['site'] ?>imagens/contato-fone.png'>
+                <div class="d-flex flex-column ml-3">
+                    <a href="" class="text-white mb-2">(54) 3332-1355</a>
+                    <a href="" class="text-white mb-2">(54) 3332-4525</a>
+                    <a href="" class="text-white mb-2">(54) 3332-5522</a>
+                </div>
+            </div>
         </div>
-    </form>
-        
+    </div>
 </section>
-
-<?php if($loja['recaptcha'] != ''){ ?>
-    <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
-<?php } ?>
-
-<?php /* LIMPA A SESSION DE RETORNO */ unset($_SESSION['RETORNO']); ?>

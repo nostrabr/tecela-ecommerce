@@ -559,43 +559,16 @@ $sobre_site = $array_seo[0]['descricao'];
     <?php } ?>
 
     <!--METATAG DE INCORPORAÇÃO-->
-    <meta property="fb:app_id" content="" /> <!--  Non-Essential, But Required for Analytics -->
-    <meta property="og:image" content="<?= $loja['site'].'imagens/incorporacao.png' ?>">
-    <meta property="og:image:url" content="<?= $loja['site'].'imagens/incorporacao.png' ?>">
-    <meta property="og:image:secure_url" content="<?= $loja['site'].'imagens/incorporacao.png' ?>">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="">
-    <meta property="og:image:height" content="">
-    <meta property="og:image:alt" content=""> <!-- A descrição da imagem sendo incorporada -->
+    <meta property="og:image" content="<?= $loja['site'].'imagens/thumb.png' ?>">
+    <meta property="og:image:width" content="310">
+    <meta property="og:image:height" content="310">
     <meta property="og:url" content="<?= $loja['site'] ?>">
     <meta property="og:site_name" content="<?= $loja['nome'] ?>">
     <meta property="og:type" content="website">
-    <meta name="twitter:site" content="<?= $loja['site'] ?>">
-    <meta name="twitter:title" content="<?= $loja['nome'] ?>">
-    <meta name="twitter:image" content="<?= $loja['site'].'imagens/incorporacao.png' ?>">
-    <meta name="twitter:image:alt" content="<?= $loja['site'] ?>">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:description" content="">
     
     <!--ICONS-->
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= $loja['site'] ?>imagens/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="<?= $loja['site'] ?>imagens/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?= $loja['site'] ?>imagens/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?= $loja['site'] ?>imagens/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?= $loja['site'] ?>imagens/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?= $loja['site'] ?>imagens/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?= $loja['site'] ?>imagens/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="<?= $loja['site'] ?>imagens/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $loja['site'] ?>imagens/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?= $loja['site'] ?>imagens/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $loja['site'] ?>imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?= $loja['site'] ?>imagens/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $loja['site'] ?>imagens/favicon-16x16.png">
-    <link rel="manifest" href="<?= $loja['site'] ?>imagens/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="<?= $loja['site'] ?>imagens/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    
+    <link rel="shortcut icon" href="<?= $loja['site'] ?>imagens/favicon.png" type="image/x-icon">
+
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">

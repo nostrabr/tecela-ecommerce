@@ -30,7 +30,7 @@
 }
 #login-acesso-box{
     width: 430px;
-    background-color: rgba(255,255,255,1);
+    background-color: #1C4A50;
     border-top: 8px solid var(--cor-tema);;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.2);
@@ -62,7 +62,7 @@
     border-radius: 5px;
     padding: 15px 50px;
     color: #FFF;
-    background-color: var(--cor-tema);
+    background-color: #DC582A;
     margin-bottom: 35px;
     font-size: 13px;
     letter-spacing: 1px;

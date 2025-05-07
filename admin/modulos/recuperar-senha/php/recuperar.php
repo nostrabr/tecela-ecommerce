@@ -78,15 +78,6 @@ if(!empty($email)){
                     <td height="0" valign="top" style="padding: 0px;">
                         <table width="100%" border="0" align="center" cellpadding="50">
                             <tbody>
-                                <tr><td style="padding: 0px;">'.$loja['email_cabecalho'].'</td></tr>               
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="0" valign="top" style="padding: 0px;">
-                        <table width="100%" border="0" align="center" cellpadding="50">
-                            <tbody>
                                 <tr><td style="padding: 20px 0 0 0;">Olá '.$usuario['nome'].'.</td></tr>
                                 <tr><td style="padding: 0px;">Você solicitou uma nova senha de acesso ao admin da loja.</td></tr>
                                 <tr><td style="padding: 0px;">Nova senha: '.$nova_senha.'</td></tr>   
@@ -94,15 +85,6 @@ if(!empty($email)){
                                 <tr><td style="padding: 0px;">Para alerá-la, basta acessar o sistema com a nova senha e ir nas configurações do usuário.</tr>               
                                 <tr><td style="padding: 20px 0 0 0;">Atenciosamente,</tr>               
                                 <tr><td style="padding: 0 0 20px 0;">Equipe <b>'.$loja['nome'].'</></td></tr>                
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td height="0" valign="top" style="padding: 0px;">
-                        <table width="100%" border="0" align="center" cellpadding="50">
-                            <tbody>
-                                <tr><td style="padding: 0px;">'.$loja['email_rodape'].'</td></tr>               
                             </tbody>
                         </table>
                     </td>
