@@ -78,7 +78,7 @@
 
 
         <div id="container-banner-solucoes" class="mt-5 mb-0 mb-lg-5">
-            <a href="" style="opacity: 1;"><img class="d-none d-lg-block" src='<?= $loja['site']?>imagens/banner-solucoes-desktop.png'></a>
-            <a href="" style="opacity: 1;"><img class="d-block d-lg-none" src='<?= $loja['site']?>imagens/banner-solucoes-mobile.png'></a>
+            <a href="<?= $loja['site']?>contato.php" style="opacity: 1;"><img class="d-none d-lg-block" src='<?= $loja['site']?>imagens/banner-solucoes-desktop.png'></a>
+            <a href="<?= $loja['site']?>contato.php" style="opacity: 1;"><img class="d-block d-lg-none" src='<?= $loja['site']?>imagens/banner-solucoes-mobile.png'></a>
         </div>
 </section>

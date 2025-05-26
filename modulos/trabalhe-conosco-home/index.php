@@ -42,5 +42,5 @@
 
 <section id="container-trabalhe-conosco-home" style="background-image: url('<?= $loja['site']; ?>imagens/trabalhe-conosco-home.png');">
     <h2 class="text-white mb-4"><strong>Trabalhe conosco</strong> e <br> construa uma carreira <br> sólida em nossa <strong>equipe</strong>!</h2>
-    <a href="" id="faca-parte-equipe">Faça parte da equipe</a>
+    <a href="<?= $loja['site']?>trabalhe-conosco.php" id="faca-parte-equipe">Faça parte da equipe</a>
 </section>

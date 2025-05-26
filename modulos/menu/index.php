@@ -145,12 +145,12 @@
                     }                    
                 ?>   
 
-                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Home</a></li>
-                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Quem Somos</a></li>
-                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Segmento</a></li>
-                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Produtos</a></li>
-                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Contato</a></li>
-                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>login">Trabalhe Conosco</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>index.php">Home</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>sobre.php">Quem Somos</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>">Segmento</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>">Produtos</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>contato.php">Contato</a></li>
+                <li class="mb-1 mt-5"><a class="menu-mobile-titulo" href="<?= $loja['site'] ?>trabalhe-conosco.php">Trabalhe Conosco</a></li>
                 
             </ul>
            

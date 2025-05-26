@@ -655,4 +655,4 @@ $sobre_site = $array_seo[0]['descricao'];
 <?php } ?>
 
 <!-- ABRE A DIV CONTAINER E FECHA NO FOOTER -->
-<div class="container">
+<div class="px-3 px-lg-0">

@@ -179,7 +179,7 @@ include_once '../../bd/desconecta.php';
                     }
                 ?>
 
-                <div class="col-12 col-lg-4 mb-5 mb-lg-0 px-3" style="cursor: pointer;" onclick="javascript: window.location.href = '<?= $loja['site'] ?>categoria/<?= $cat['id'] ?>';">
+                <div class="col-12 col-lg-4 mb-5 mb-lg-0 px-3" style="cursor: pointer;" onclick="javascript: window.location.href = '<?= $loja['site'] ?>produtos.php?cat=<?= $cat['nome'] ?>&id=<?= $cat['id'] ?>';">
                     <div style="background-color: <?= $cor_categoria; ?>;  --cor-categoria: <?= $cor_categoria; ?>;" class="header-linha"><?= $cat['nome'] ?></div>
 
                     <div class="container-img-linha" style="border: 5px solid <?= $cor_categoria; ?>">
@@ -191,7 +191,7 @@ include_once '../../bd/desconecta.php';
 
         <div class="mt-5">
             <a href="<?= $loja['site'] ?>categorias">
-                <button class="nossas-linhas-btn">Solicite um orçamento</button>
+                <a href="<?= $loja['site']; ?>contato.php" class="nossas-linhas-btn text-white">Solicite um orçamento</a>
             </a>
         </div>
     </div>

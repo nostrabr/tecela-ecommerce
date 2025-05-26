@@ -19,6 +19,8 @@
     cursor: pointer;
     transition: 0.3s;
     margin-bottom: 30px;
+    height: 300px !important;
+    background-color: rgba(0, 0, 0, 0.219) !important;
 }
 #configuracoes .opcao img{
     max-width: 150px;

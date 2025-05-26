@@ -66,7 +66,7 @@
             <div class="pl-0 pl-lg-5 col-12 col-lg-6">
                 <h3 id="title-quem-somos-home" class="mb-3" style="color: #DC582A; font-weight: bold;">Quem Somos</h3>
                 <p id="sub-quem-somos-home" style="color: #1C4A50;" class="mb-5">Fundada em 2002, a empresa Tecelã tem por objetivo a <strong>confecção de uniformes profissionais</strong>, está situada no município de Não-Me-Toque no norte do estado do Rio Grande do Sul e conta também com uma filial na cidade de Mormaço, implantada no ano de 2006...</p>
-                <a href="" id="btn-quem-somos-home" class="rounded py-3 px-5 text-white" style="background-color: #1C4A50;">Conheça mais</a>
+                <a href="<?= $loja['site']?>sobre.php" id="btn-quem-somos-home" class="rounded py-3 px-5 text-white" style="background-color: #1C4A50;">Conheça mais</a>
             </div>
         </div>
     </div>

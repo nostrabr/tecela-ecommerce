@@ -40,25 +40,25 @@ if($nivel_usuario == 'U'){
                         </tr>
                     </thead>
                     <tbody>     
-                        <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-menu.php';">
+                        <tr class="d-none cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-menu.php';">
                             <td class="text-capitalize">Menu <small>(Menu principal do site)</small></td>
                         </tr>   
-                        <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-barra-categorias.php';">
+                        <tr class="d-none cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-barra-categorias.php';">
                             <td class="text-capitalize">Barra de categorias <small>(Configurar a barra de categorias que aparece no topo da página)</small></td>
                         </tr>
                         <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-banners.php';">
                             <td class="text-capitalize">Banner principal <small>(Banner grande da página inicial)</small></td>
                         </tr> 
-                        <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-banners-secundarios.php';">
+                        <tr class="d-none cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-banners-secundarios.php';">
                             <td class="text-capitalize">Banners secundários <small>(Banners pequenos que vem logo abaixo do banner grande da página inicial)</small></td>
                         </tr>
-                        <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-banners-produto.php';">
+                        <tr class="d-none cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-banners-produto.php';">
                             <td class="text-capitalize">Banners produto <small>(Banner aleatório na página de produto)</small></td>
                         </tr>
-                        <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-informacoes-adicionais.php';">
+                        <tr class="d-none cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-informacoes-adicionais.php';">
                             <td class="text-capitalize">Informações adicionais <small>(Informações adicionais na página inicial)</small></td>
                         </tr> 
-                        <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-navegue-categorias.php';">
+                        <tr class="d-none cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-navegue-categorias.php';">
                             <td class="text-capitalize">Sessão de categorias <small>(Sessão 'Navegue pelas categorias' na tela inicial da loja)</small></td>
                         </tr> 
                         <tr class="cursor-pointer" title="Editar" onclick="javascript: window.location.href = 'configuracoes-design-contato.php';">

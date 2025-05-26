@@ -117,7 +117,7 @@ if(mysqli_num_rows($busca_ultimo_id) > 0){
                                 </select>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="d-none col-12 col-md-6">
                             <div class="form-group">
                                 <label for="categoria_google">Categoria Google</label>
                                 <input type="number" class="form-control" name="categoria_google" id="categoria_google">

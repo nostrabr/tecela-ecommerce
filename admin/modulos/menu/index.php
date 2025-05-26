@@ -9,7 +9,7 @@ $nivel_usuario = filter_var($_SESSION['nivel']);
 ?>
 
 <!--SECTION MENU CABEÇALHO-->
-<section id="menu-cabecalho">
+<section id="menu-cabecalho" class="bg-secondary">
 
     <div class="container-fluid">
         <div class="row align-items-center">
@@ -36,10 +36,10 @@ $nivel_usuario = filter_var($_SESSION['nivel']);
     <div class="menu-opcoes">
         <ul>                
             <?php if($nivel_usuario == 'U'){ ?>
-                <li onclick="javascript: window.location.href = 'dashboard.php';" class="menu-opcao" data-active="dashboard">Dashboard</li>
+                <li onclick="javascript: window.location.href = 'dashboard.php';" class="menu-opcao d-none" data-active="dashboard">Dashboard</li>
                 <?php if($modo_whatsapp){ ?>
                     <?php if(!$modo_whatsapp_simples){ ?>
-                        <li onclick="javascript: window.location.href = 'orcamentos.php';" class="menu-opcao" data-active="orcamentos">Orçamentos</li>
+                        <li onclick="javascript: window.location.href = 'orcamentos.php';" class="menu-opcao d-none" data-active="orcamentos">Orçamentos</li>
                     <?php } ?>
                 <?php } else { ?>
                     <li onclick="javascript: window.location.href = 'pedidos.php';" class="menu-opcao" data-active="pedidos">Pedidos</li>
@@ -50,10 +50,10 @@ $nivel_usuario = filter_var($_SESSION['nivel']);
                 <li onclick="javascript: window.location.href = 'produtos.php';" class="menu-opcao" data-active="produtos">Produtos</li>
                 <li onclick="javascript: window.location.href = 'logout.php';" class="menu-opcao opcao-logout">SAIR</li>
             <?php } else if($nivel_usuario == 'A' | $nivel_usuario == 'M' | $nivel_usuario == 'S'){ ?>
-                <li onclick="javascript: window.location.href = 'dashboard.php';" class="menu-opcao" data-active="dashboard">Dashboard</li>
+                <li onclick="javascript: window.location.href = 'dashboard.php';" class="menu-opcao d-none" data-active="dashboard">Dashboard</li>
                 <?php if($modo_whatsapp){ ?>
                     <?php if(!$modo_whatsapp_simples){ ?>
-                        <li onclick="javascript: window.location.href = 'orcamentos.php';" class="menu-opcao" data-active="orcamentos">Orçamentos</li>
+                        <li onclick="javascript: window.location.href = 'orcamentos.php';" class="d-none menu-opcao" data-active="orcamentos">Orçamentos</li>
                     <?php } ?>
                 <?php } else { ?>
                         <li onclick="javascript: window.location.href = 'pedidos.php';" class="menu-opcao" data-active="pedidos">Pedidos</li>
@@ -61,11 +61,11 @@ $nivel_usuario = filter_var($_SESSION['nivel']);
                         <li onclick="javascript: window.location.href = 'envios.php';" class="menu-opcao" data-active="envios">Envios</li>
                     <?php } ?>
                 <?php } ?>
-                <li onclick="javascript: window.location.href = 'clientes.php';" class="menu-opcao" data-active="clientes">Clientes</li>
                 <li onclick="javascript: window.location.href = 'produtos.php';" class="menu-opcao" data-active="produtos">Produtos</li>
-                <li onclick="javascript: window.location.href = 'atributos.php';" class="menu-opcao" data-active="atributos">Atributos</li>
-                <li onclick="javascript: window.location.href = 'marcas.php';" class="menu-opcao" data-active="marcas">Marcas</li>
                 <li onclick="javascript: window.location.href = 'categorias.php';" class="menu-opcao" data-active="categorias">Categorias e Tags</li>                
+                <li onclick="javascript: window.location.href = 'marcas.php';" class="menu-opcao" data-active="marcas">Marcas</li>
+                <li onclick="javascript: window.location.href = 'clientes.php';" class="menu-opcao" data-active="clientes">Clientes</li>
+                <li onclick="javascript: window.location.href = 'atributos.php';" class="menu-opcao" data-active="atributos">Atributos</li>
                 <?php if(!$modo_whatsapp){ ?>
                     <li onclick="javascript: window.location.href = 'cupons.php';" class="menu-opcao" data-active="cupons">Cupons</li>
                 <?php } ?>

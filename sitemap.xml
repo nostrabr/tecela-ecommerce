@@ -1,238 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
     <loc>http://localhost:8080/</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/promocao</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/vistos-recentemente</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/mais-vendidos</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
 </url>
 <url>
     <loc>http://localhost:8080/contato</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
 </url>
 <url>
     <loc>http://localhost:8080/localizacao</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
 </url>
 <url>
     <loc>http://localhost:8080/sobre</loc>
-    <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+    <lastmod>2025-05-26T17:36:42-03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
 </url>
     <url>
-        <loc>http://localhost:8080/categoria/bones-e-chapeus/11</loc>
-        <lastmod>2021-08-04T12:57:26-03:00</lastmod>
+        <loc>http://localhost:8080/categoria/malhas/24</loc>
+        <lastmod>2025-04-30T13:33:50-03:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>http://localhost:8080/categoria/acessorios/9</loc>
-        <lastmod>2021-08-04T12:51:48-03:00</lastmod>
+        <loc>http://localhost:8080/categoria/uniformes/25</loc>
+        <lastmod>2025-04-30T13:34:11-03:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>http://localhost:8080/categoria/facas-e-espetos/14</loc>
-        <lastmod>2021-08-04T12:57:56-03:00</lastmod>
+        <loc>http://localhost:8080/categoria/esportiva/26</loc>
+        <lastmod>2025-04-30T13:34:24-03:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
-    <url>
-        <loc>http://localhost:8080/categoria/chimarrao-e-terere/2</loc>
-        <lastmod>2021-08-03T13:40:46-03:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://localhost:8080/categoria/bebidas/20</loc>
-        <lastmod>2021-08-05T14:27:00-03:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://localhost:8080/categoria/copos-e-tacas/19</loc>
-        <lastmod>2021-08-04T14:54:44-03:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://localhost:8080/categoria/utensilios-para-churrasco/15</loc>
-        <lastmod>2021-08-04T12:58:00-03:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://localhost:8080/categoria/teste/22</loc>
-        <lastmod>2025-04-15T16:55:50-03:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>http://localhost:8080/categoria/sub-teste/23</loc>
-        <lastmod>2025-04-15T16:56:28-03:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1</priority>
-    </url>
-<url>
-    <loc>http://localhost:8080/produto/copos-e-tacas/taca-de-cristal-para-cerveja/13</loc>
-    <lastmod>2024-01-31T13:48:52-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Taa_De_Cristal_Para_Cerveja_1_b66c2323320c9ee82ac581750881db2a.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/mochila-roos-cinza/14</loc>
-    <lastmod>2024-11-22T17:39:22-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Mochila_Roos_1_cee3e52fa34182de401508ca94dc45bd.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/mateira-em-couro/15</loc>
-    <lastmod>2024-09-16T10:57:53-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Mateira_Em_Couro_1_1d3a08631f72c98a66638ade7d812978.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/kit-terere-em-inox-25l/21</loc>
-    <lastmod>2025-04-01T08:24:47-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Terer_Em_Inox_25L_1_a02bcd41d0ad078ecb0a1805ed616cdb.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/kit-terere-plastico-25l/23</loc>
-    <lastmod>2024-11-22T17:26:07-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Terer_Plstico_25L_1_21ca5819e53fa9f0f9dfd172b436c469.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/porta-copo-mdf/31</loc>
-    <lastmod>2024-01-31T13:50:00-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_4X_Porta_Copo_Mdf_2_7b9796113de2cee689253011f170cf34.jpg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/mochila-roos-chumbo/35</loc>
-    <lastmod>2024-11-22T17:39:12-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Mochila_Roos_4_03cdd5d7c0ce85192324f2aa39caec14.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/mochila-roos-4-bolsos/38</loc>
-    <lastmod>2024-11-22T17:35:36-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Mochila_Roos_4_Bolsos_1_60a42fe5560296480b56218a9b037016.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/termica-plastica-1l-acabamento-em-couro/45</loc>
-    <lastmod>2025-03-12T08:31:45-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Trmica_Plstica_1L_Em_Couro_1_44e0c6ade6506baad411707255aad034.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/chimarrao-e-terere/porta-cuia-roos/51</loc>
-    <lastmod>2024-11-22T17:15:01-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Porta_Cuia_Roos_2_a57b6c3670d2813c1bc0f907767e4b9b.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/facas-e-espetos/kit-espeto-4-unidades/58</loc>
-    <lastmod>2025-04-01T08:24:32-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Kit_Espeto_4_Unidades_4_1c44ca5b824864a5cada9afbb25c90f6.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/acessorios/mochila-roos-em-couro-sintetico/59</loc>
-    <lastmod>2025-03-12T10:01:01-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Mochila_Roos_Em_Couro_1_d9e8024960411998e93b4791745e4109.jpeg</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/sub-teste/produto-teste/61</loc>
-    <lastmod>2025-04-15T16:57:56-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/sub-teste/produto-teste/62</loc>
-    <lastmod>2025-04-15T16:58:09-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
-<url>
-    <loc>http://localhost:8080/produto/sub-teste/produto-teste/63</loc>
-    <lastmod>2025-04-24T15:36:11-03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <image:image>
-        <image:loc>http://localhost:8080/imagens/produtos/grande/Produto_Teste_1_3a59c18db89b4e24a485494437cc0a4b.png</image:loc>
-    </image:image>
-    <priority>1</priority>
-</url>
     <url>
         <loc>http://localhost:8080/pagina.php?id=1d5e94ac4d7fc85df5f0ab18fe84f778</loc>
-        <lastmod>2025-04-30T11:58:52-03:00</lastmod>
+        <lastmod>2025-05-26T17:36:42-03:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
     </url></urlset>

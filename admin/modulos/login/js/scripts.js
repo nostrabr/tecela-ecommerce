@@ -23,7 +23,7 @@ function processaLogin(){
         data: urlData,
         success: function(data) {
             if(data === "OK"){
-                window.location.href = "dashboard.php";
+                window.location.href = "produtos.php";
             } else if (data === "NOT OK"){ 
                 mensagemAviso('erro', 'Dados de acesso incorretos', 2000);
             }

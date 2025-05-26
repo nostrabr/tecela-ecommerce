@@ -68,7 +68,7 @@ if(isset($_SESSION["CEP"])){
             <div class="col-12 col-xl-4">
                 <div class="form-group">
                     <label for="cep">CEP <span class="campo-obrigatorio">*</span></label>
-                    <input type="text" name="cep" maxlength="10" minlength="10" id="cep" class="form-control" value="<?= $cep ?>" required>
+                    <input type="text" name="cep" maxlength="9" minlength="9" id="cep" class="form-control" value="<?= $cep ?>" required>
                     <small>Digite o seu CEP e o sistema buscará o endereço para você</small>
                 </div>              
             </div>                   

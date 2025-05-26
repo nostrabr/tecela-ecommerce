@@ -159,7 +159,7 @@
     </div>
 </footer>
 
-<div class="bg-white py-4 px-4 px-lg-0">
+<div class="bg-white py-4 px-4 px-lg-0" style="margin-left: -15px; margin-right: -15px;">
     <div id="rodape-footer" class="mr-auto ml-auto d-flex justify-content-between align-items-center flex-column flex-lg-row">
         <span class="mb-4 mb-lg-0 text-center text-lg-start" style="color: #1C4A50; font-weight: 500;"><?= date('Y'); ?> © Tecelã - Todos os direitos reservados.</span>
 

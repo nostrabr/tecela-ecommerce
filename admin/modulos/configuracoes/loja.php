@@ -247,7 +247,7 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
 
             <div class="row admin-subtitulo"><div class="col-12">Outros</div></div>
 
-            <div class="row mb-2">                            
+            <div class="d-none row mb-2">                            
                 <div class="col-12">                        
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input text-uppercase" id="site-manutencao" name="site-manutencao" <?php if($loja['site_manutencao'] == 1){ echo 'checked'; } ?> >
@@ -267,7 +267,7 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
                 </div>   
             </div>
 
-            <div class="row">                            
+            <div class="row d-none">                            
                 <div class="col-12">                        
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input text-uppercase" id="opcao-validar-email-cadastro" name="opcao-validar-email-cadastro" <?php if($loja['opcao_validar_email_cadastro'] == 1){ echo 'checked'; } ?> >

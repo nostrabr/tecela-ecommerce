@@ -29,7 +29,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-paginas-customizadas.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-paginas-customizadas.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/paginas-customizadas.png" alt="Loja"></li>
@@ -45,7 +45,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/seo.png" alt="SEO"></li>
@@ -54,7 +54,7 @@ if($nivel_usuario == 'U'){
                     </div>
                 </div>
                 <?php if(!$modo_whatsapp_simples){ ?>
-                    <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-frete.php'">                
+                    <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-frete.php'">                
                         <div class="opcao">
                             <ul>
                                 <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/frete.png" alt="Frete"></li>
@@ -63,7 +63,7 @@ if($nivel_usuario == 'U'){
                         </div>
                     </div>
                 <?php } ?>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-politicas.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-politicas.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/politicas.png" alt="Politicas"></li>
@@ -72,7 +72,7 @@ if($nivel_usuario == 'U'){
                     </div>
                 </div>
                 <?php if(!$modo_whatsapp){ ?>
-                    <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-pagamento.php'">                
+                    <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-pagamento.php'">                
                         <div class="opcao">
                             <ul>
                                 <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/pagamento.png" alt="Pagamento"></li>
@@ -80,7 +80,7 @@ if($nivel_usuario == 'U'){
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 col-xl-3 d-none" onclick="javascript: window.location.href = 'configuracoes-nota-fiscal.php'">                
+                    <div class="d-none col-12 col-md-4 col-xl-3 d-none" onclick="javascript: window.location.href = 'configuracoes-nota-fiscal.php'">                
                         <div class="opcao">
                             <ul>
                                 <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/nota-fiscal.png" alt="Nota Fiscal"></li>
@@ -97,7 +97,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-facebook-pixel.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-facebook-pixel.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/facebook-pixel.png" alt="Facebook Pixel"></li>
@@ -105,7 +105,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-google-tag-manager.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-google-tag-manager.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/google-tag-manager.png" alt="Google Tag Manager"></li>
@@ -113,7 +113,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-google-analytics.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-google-analytics.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/google-analytics.png" alt="Google Analytics"></li>
@@ -122,7 +122,7 @@ if($nivel_usuario == 'U'){
                     </div>
                 </div>
             <?php } else if($nivel_usuario == 'A'){ ?>            
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-design.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-design.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/design.png" alt="Design"></li>
@@ -130,7 +130,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
+                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/seo.png" alt="SEO"></li>
