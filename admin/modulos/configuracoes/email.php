@@ -36,7 +36,7 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
         
         <!-- FORM DE EDIÇÃO -->
         <form action="modulos/configuracoes/php/edicao-email.php" method="POST">
-            <div class="row <?php if($nivel_usuario != 'S'){ echo 'd-none'; } ?>">
+            <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="form-group">
                         <label for="email">E-mail <span class="campo-obrigatorio">*</span></label>
@@ -50,7 +50,7 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
                     </div>
                 </div>
             </div>
-            <div class="row <?php if($nivel_usuario != 'S'){ echo 'd-none'; } ?>">
+            <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="form-group">
                         <label for="host">Host <span class="campo-obrigatorio">*</span></label>
@@ -100,21 +100,21 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
                     <small>Variáveis aceitas: {cliente_nome}, {cliente_sobrenome}, {cliente_cpf}, {cliente_email}, {loja_endereco}, {loja_telefone}, {loja_whatsapp}, {loja_email}, {loja_nome}, {loja_site}</small>
                 </div>
             </div>    
-            <div class="row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
+            <div class="d-none row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
                 <div class="col-12">
                     <label for="summernote4">Pedido por boleto</label>
                     <textarea id="summernote4" class="summernote4" name="summernote4"><?= $loja['email_pedido_boleto'] ?></textarea>
                     <small>Variáveis aceitas: {cliente_nome}, {cliente_email}, {pedido_codigo}, {boleto_link}, {loja_endereco}, {loja_telefone}, {loja_whatsapp}, {loja_email}, {loja_nome}, {loja_site}</small>
                 </div>
             </div>    
-            <div class="row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
+            <div class="d-none row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
                 <div class="col-12">
                     <label for="summernote5">Pedido por cartão</label>
                     <textarea id="summernote5" class="summernote5" name="summernote5"><?= $loja['email_pedido_cartao'] ?></textarea>
                     <small>Variáveis aceitas: {cliente_nome}, {cliente_email}, {pedido_codigo}, {loja_endereco}, {loja_telefone}, {loja_whatsapp}, {loja_email}, {loja_nome}, {loja_site}</small>
                 </div>
             </div>      
-            <div class="row mt-3 <?php if($modo_whatsapp | ($pagamento['pix'] == 0 & $pagamento['asaas_pix'] == 0)){ echo 'd-none'; } ?>">
+            <div class="d-none row mt-3 <?php if($modo_whatsapp | ($pagamento['pix'] == 0 & $pagamento['asaas_pix'] == 0)){ echo 'd-none'; } ?>">
                 <div class="col-12">
                     <label for="summernote9">Pedido por pix</label>
                     <textarea id="summernote9" class="summernote9" name="summernote9"><?= $loja['email_pedido_pix'] ?></textarea>
@@ -122,28 +122,28 @@ if($nivel_usuario == 'U' | $nivel_usuario == 'A'){
                     <small>Com o Asaas ativo: {pedido_url}</small>
                 </div>
             </div>      
-            <div class="row mt-3 <?php if(!$modo_whatsapp){ echo 'd-none'; } else { if($modo_whatsapp_simples){ echo 'd-none'; } } ?>">
+            <div class="d-none row mt-3 <?php if(!$modo_whatsapp){ echo 'd-none'; } else { if($modo_whatsapp_simples){ echo 'd-none'; } } ?>">
                 <div class="col-12">
                     <label for="summernote6">Pedido de orçamento</label>
                     <textarea id="summernote6" class="summernote6" name="summernote6"><?= $loja['email_pedido_orcamento'] ?></textarea>
                     <small>Variáveis aceitas: {cliente_nome}, {cliente_email}, {orcamento_codigo}, {loja_endereco}, {loja_telefone}, {loja_whatsapp}, {loja_email}, {loja_nome}, {loja_site}</small>
                 </div>
             </div>    
-            <div class="row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
+            <div class="d-none row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
                 <div class="col-12">
                     <label for="summernote7">Confirmação de pagamento de pedido</label>
                     <textarea id="summernote7" class="summernote7" name="summernote7"><?= $loja['email_pedido_confirmacao'] ?></textarea>
                     <small>Variáveis aceitas: {cliente_nome}, {cliente_email}, {pedido_codigo}, {loja_endereco}, {loja_telefone}, {loja_whatsapp}, {loja_email}, {loja_nome}, {loja_site}</small>
                 </div>
             </div>    
-            <div class="row mt-3">
+            <div class="d-none row mt-3">
                 <div class="col-12">
                     <label for="summernote12">Autorização para retirada de pedido</label>
                     <textarea id="summernote12" class="summernote12" name="summernote12"><?= $loja['email_pedido_confirmacao_retirada'] ?></textarea>
                     <small>Variáveis aceitas: {cliente_nome}</small>
                 </div>
             </div>    
-            <div class="row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
+            <div class="d-none row mt-3 <?php if($modo_whatsapp){ echo 'd-none'; } ?>">
                 <div class="col-12">
                     <label for="summernote10">Pedido enviado</label>
                     <textarea id="summernote10" class="summernote10" name="summernote10"><?= $loja['email_pedido_enviado'] ?></textarea>
