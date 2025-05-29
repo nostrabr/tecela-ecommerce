@@ -1,1 +1,1 @@
-<h1>banner trabalhe conosco</h1>
+<h2 class="my-5 text-center">Em construção!</h2>

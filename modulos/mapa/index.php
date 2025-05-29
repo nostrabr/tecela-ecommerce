@@ -36,7 +36,7 @@
 
     @media(min-width:1500px){
         #container-mapa{
-            height: 40vh;
+            height: 50vh;
         }
 
         #infos{
@@ -72,8 +72,8 @@
 <section id="container-mapa">
     <div id="infos">
         <h2 class="text-white mb-3"><img style="width: 30px;" src='<?= $loja['site']?>imagens/maps.png'> Onde estamos</h2>
-        <p class="mb-4 text-white">R. Padre Valentim Rumpel, 905 - Martini, Não-Me-Toque - RS, 99470-000</p>
-        <a href="" target="_blank" id="acessar-mapa">Acesse o mapa</a>
+        <p class="mb-4 text-white"><?= $loja['rua'] ?>, N <?= $loja['numero'] ?>, Não-Me-Toque - RS, <?= $loja['cep'] ?></p>
+        <a href="<?= $loja['google_maps'] ?>" target="_blank" id="acessar-mapa">Acesse o mapa</a>
     </div>
 
     <div id="mapa">

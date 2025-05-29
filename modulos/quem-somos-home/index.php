@@ -16,7 +16,7 @@
 
     @media(min-width:1500px) {
         #container-img-sobre-home{
-            height: 400px;
+            height: 500px;
         }
 
         #title-quem-somos-home{

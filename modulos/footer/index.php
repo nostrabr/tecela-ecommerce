@@ -116,22 +116,22 @@
 
             <div class="d-flex justify-content-start align-items-center mb-3">
                 <img style="width: 30px;" class="mr-3" src='<?= $loja['site']; ?>imagens/wpp-orange.png'>
-                <p class="text-white _font-item-footer align-self-center my-0">(54) 99132-4215</p>
+                <p class="text-white _font-item-footer align-self-center my-0"><?= $loja['whatsapp']; ?></p>
             </div>
 
             <div class="d-flex justify-content-start align-items-center mb-3">
                 <img style="width: 30px;" class="mr-3 align-self-center" src='<?= $loja['site']; ?>imagens/phone-orange.png'>
                 <div>
-                    <p class="text-white _font-item-footer my-2">(54) 99132-4215</p>
-                    <p class="text-white _font-item-footer my-2">(54) 99132-4215</p>
-                    <p class="text-white _font-item-footer my-2">(54) 99132-4215</p>
+                    <p class="text-white _font-item-footer my-2"><?= $loja['telefone']; ?></p>
+                    <p class="text-white _font-item-footer my-2">(54) 3332-5522</p>
+                    <p class="text-white _font-item-footer my-2">(54) 3332-4525</p>
                 </div>
             </div>
 
             <div class="d-flex justify-content-start align-items-center mb-3">
                 <img style="width: 30px;" class="mr-3 align-self-center" src='<?= $loja['site']; ?>imagens/email-orange.png'>
                 <div>
-                    <p class="text-white _font-item-footer my-2">tecela@tecela.com.br</p>
+                    <p class="text-white _font-item-footer my-2"><?= $loja['email']; ?></p>
                     <p class="text-white _font-item-footer my-2">comercial@tecela.com.br</p>
                 </div>
             </div>
@@ -141,19 +141,19 @@
         <div class="col-12 col-lg-3 mb-5 mb-lg-0">
             <h5 class="_title-items-footer mb-4">Onde Estamos</h5>
 
-            <p class="text-white mb-5 _font-item-footer">Rua Padre Valentim Rumpel, N 905, Não-Me-Toque – RS <br> CEP: 99470-000</p>
+            <p class="text-white mb-5 _font-item-footer"><?= $loja['rua']; ?>, N <?= $loja['numero']; ?>, Não-Me-toque – RS <br> CEP: <?= $loja['cep']; ?></p>
 
-            <a href="" target="_blank" id="acessar-mapa">Acessar mapa</a>
+            <a href="<?= $loja['google_maps'] ?>" target="_blank" id="acessar-mapa">Acessar mapa</a>
         </div>
 
         <div class="col-12 col-lg-3">
             <h5 class="_title-items-footer mb-4 mb-lg">Navegação</h5>
 
             <div class="d-flex flex-column align-items-start">
-                <a href="" class="_link-footer _font-item-footer mb-3">Home</a>
-                <a href="" class="_link-footer _font-item-footer mb-3">Quem Somos</a>
-                <a href="" class="_link-footer _font-item-footer mb-3">Produtos</a>
-                <a href="" class="_link-footer _font-item-footer mb-3">Contato</a>
+                <a href="<?= $loja['loja']; ?>index.php" class="_link-footer _font-item-footer mb-3">Home</a>
+                <a href="<?= $loja['loja']; ?>sobre.php" class="_link-footer _font-item-footer mb-3">Quem Somos</a>
+                <a href="<?= $loja['loja']; ?>" class="_link-footer _font-item-footer mb-3">Produtos</a>
+                <a href="<?= $loja['loja']; ?>contato.php" class="_link-footer _font-item-footer mb-3">Contato</a>
             </div>
         </div>
     </div>
@@ -163,7 +163,7 @@
     <div id="rodape-footer" class="mr-auto ml-auto d-flex justify-content-between align-items-center flex-column flex-lg-row">
         <span class="mb-4 mb-lg-0 text-center text-lg-start" style="color: #1C4A50; font-weight: 500;"><?= date('Y'); ?> © Tecelã - Todos os direitos reservados.</span>
 
-        <img style="width: 80px;" src='<?= $loja['site'] ?>imagens/nostra-logo.png'>
+        <a href="https://nostrabr.com/" target="_blank"><img style="width: 80px;" src='<?= $loja['site'] ?>imagens/nostra-logo.png'></a>
     </div>
 </div>
 

@@ -831,7 +831,7 @@ $busca_produtos = mysqli_query($conn,"
                                     </li>
                                     <li class="produto-container-categoria"><h3><?= $produto['produto_categoria'] ?></h3></li>
                                     <li class="produto-container-nome"><h4><?= $produto['produto_nome'] ?></h4></li>
-                                    <li class="produto-container-valor"><?= $produto_preco_final ?></li>
+                                    <li class="produto-container-valor"><a href="<?= $loja['site'] ?>produto/<?= urlProduto($produto['produto_categoria']) ?>/<?= urlProduto($produto['produto_nome']) ?>/<?= $produto['produto_id'] ?>" class="rounded py-2 px-5 text-white" style="background-color: #DC582A;">Acessar</a></li>
                                     <?php if(base64_encode(base64_decode($produto['produto_descricao'], true)) === $produto['produto_descricao']){ $produto_descricao = base64_decode($produto['produto_descricao']); } else { $produto_descricao = $produto['produto_descricao']; } ?>
                                     <li class="produto-container-descricao"><?= str_replace('<br />', '', $produto_descricao) ?></li>
                                 </ul>                        

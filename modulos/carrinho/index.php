@@ -303,9 +303,10 @@ if($modo_whatsapp_simples){
                     <div class="col-12">
                         <div class="carrinho-botoes-container">
                             <ul>
-                                <li class="d-none d-md-inline-flex mr-4 align-bottom"><a id="carrinho-botoes-btn-mais-produtos" href="<?= $loja['site'] ?>">Continuar comprando</a></li>
-                                <li class="d-block d-md-inline-flex"><a id="carrinho-botoes-btn-avancar" href="javascript: proximoPassoCarrinho();" class="btn-escuro">Avançar</a></li>
-                                <li class="d-block d-md-none pt-3"><a id="carrinho-botoes-btn-mais-produtos-mobile" href="<?= $loja['site'] ?>">Continuar comprando</a></li>
+                                <li class="d-none d-md-inline-flex mr-4 align-bottom"><a id="carrinho-botoes-btn-mais-produtos" href="<?= $loja['site'] ?>" class="btn-claro">Continuar comprando</a></li>
+                                <!-- <li class="d-block d-md-inline-flex"><a id="carrinho-botoes-btn-avancar" href="javascript: proximoPassoCarrinho();" class="btn-escuro">Avançar</a></li> -->
+                                <li class="d-block d-md-inline-flex"><a id="carrinho-botoes-btn-avancar" href="" class="btn-escuro">Avançar</a></li>
+                                <li class="d-block d-md-none pt-3"><a id="carrinho-botoes-btn-mais-produtos-mobile" href="<?= $loja['site'] ?>" class="btn-claro">Continuar comprando</a></li>
                             </ul>                        
                         </div>                
                     </div>

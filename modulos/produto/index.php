@@ -342,8 +342,8 @@ function urlCategoriaProduto($nome){
                                 <li><input id="produto-quantidade-input" class="form-control" type="number" value="1" min="1" max="<?= $produto_estoque ?>"></li>
                             </ul>
                         </li>
-                        <li id="produto-consultar-whatsapp"><a id="produto-btn-consultar-whatsapp" class="btn-escuro" href="https://wa.me/55<?= preg_replace("/[^0-9]/", "", $loja['whatsapp']) ?>?text=<?= urlencode("Olá! Vi o produto ".$produto['nome']." no site e gostaria de mais informações.") ?>" target="_blank">Cotar pelo Whatsapp</a></li>
-                        <li id="produto-adicionar-carrinho"><a id="produto-btn-adicionar-carrinho" class="btn-claro" href="javascript: adicionarCarrinho('adicionar');">Adicionar ao orçamento</a></li>    
+                        <li class="d-none" id="produto-consultar-whatsapp"><a id="produto-btn-consultar-whatsapp" class="btn-escuro" href="https://wa.me/55<?= preg_replace("/[^0-9]/", "", $loja['whatsapp']) ?>?text=<?= urlencode("Olá! Vi o produto ".$produto['nome']." no site e gostaria de mais informações.") ?>" target="_blank">Cotar pelo Whatsapp</a></li>
+                        <li id="produto-adicionar-carrinho"><a id="produto-btn-adicionar-carrinho" class="btn-escuro" href="javascript: adicionarCarrinho('adicionar');">Adicionar ao carrinho</a></li>    
                     <?php } ?>
                     
                     <?php $tags = mysqli_query($conn, "SELECT t.nome, t.id FROM tag AS t INNER JOIN produto_tag AS pt ON t.id = pt.id_tag WHERE pt.id_produto = '$id_produto_url'"); ?>
