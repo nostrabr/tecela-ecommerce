@@ -3,7 +3,8 @@ version: "3.8"
 services:
   web:
     image: casaliwe/ecommerce-php7
-    container_name: ecommerce-web
+    container_name: tecela
+    restart: always
     tty: true
     stdin_open: true
     ports:
