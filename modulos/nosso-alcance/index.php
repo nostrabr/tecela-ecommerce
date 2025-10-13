@@ -48,7 +48,7 @@
 
     <div class="container-nosso-alcance row mt-5">
         <div class="mb-5 mb-lg-0 col-12 col-lg-3 px-4 text-center">
-            <h2 class="title-alcance">18</h2>
+            <h2 class="title-alcance">23</h2>
             <p class="sub-alcance">Anos de História</p>
         </div>
         <div class="mb-5 mb-lg-0 col-12 col-lg-3 px-4 text-center">
@@ -60,7 +60,7 @@
             <p class="sub-alcance">Produtos em <br> Linha de Fabricação</p>
         </div>
         <div class="mb-lg-0 col-12 col-lg-3 px-4 text-center">
-            <h2 class="title-alcance">+60</h2>
+            <h2 class="title-alcance">+80</h2>
             <p class="sub-alcance">Colaboradores <br> Diretos</p>
         </div>
     </div>

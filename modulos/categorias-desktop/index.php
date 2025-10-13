@@ -31,8 +31,8 @@ function urlCategoria($nome){
 
             <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>index.php">Home</a></div>
             <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>sobre.php">Quem Somos</a></div>
-            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Segmento</a></div>
-            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>">Produtos</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>ecommerce.php">E-commerce</a></div>
+            <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>produtos.php">Produtos</a></div>
             <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>contato.php">Contato</a></div>
             <div class="col categorias-desktop-categoria"><a href="<?= $loja['site'] ?>trabalhe-conosco.php">Trabalhe Conosco</a></div>
 
