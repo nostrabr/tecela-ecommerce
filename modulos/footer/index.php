@@ -131,7 +131,7 @@
             <div class="d-flex justify-content-start align-items-center mb-3">
                 <img style="width: 30px;" class="mr-3 align-self-center" src='<?= $loja['site']; ?>imagens/email-orange.png'>
                 <div>
-                    <p class="text-white _font-item-footer my-2">comercial@tecela.com.br</p>
+                    <p class="text-white _font-item-footer my-2"><?= $loja['email']; ?></p>
                 </div>
             </div>
 

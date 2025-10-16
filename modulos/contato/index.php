@@ -48,7 +48,6 @@
                 <img style="width: 30px;" src='<?= $loja['site'] ?>imagens/contato-email.png'>
                 <div class="d-flex flex-column ml-3">
                     <a href="mailto:<?= $loja['email'] ?>" class="text-white mb-2"><?= $loja['email'] ?></a>
-                    <a href="" class="text-white">comercial@tecela.com.br</a>
                 </div>
             </div>
 
