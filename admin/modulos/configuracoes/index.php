@@ -45,7 +45,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
+                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/seo.png" alt="SEO"></li>
@@ -80,7 +80,7 @@ if($nivel_usuario == 'U'){
                             </ul>
                         </div>
                     </div>
-                    <div class="d-none col-12 col-md-4 col-xl-3 d-none" onclick="javascript: window.location.href = 'configuracoes-nota-fiscal.php'">                
+                    <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-nota-fiscal.php'">                
                         <div class="opcao">
                             <ul>
                                 <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/nota-fiscal.png" alt="Nota Fiscal"></li>
@@ -122,7 +122,7 @@ if($nivel_usuario == 'U'){
                     </div>
                 </div>
             <?php } else if($nivel_usuario == 'A'){ ?>            
-                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-design.php'">                
+                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-design.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/design.png" alt="Design"></li>
@@ -130,7 +130,7 @@ if($nivel_usuario == 'U'){
                         </ul>
                     </div>
                 </div>
-                <div class="d-none col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
+                <div class="col-12 col-md-4 col-xl-3" onclick="javascript: window.location.href = 'configuracoes-seo.php'">                
                     <div class="opcao">
                         <ul>
                             <li><img class="img-fluid" src="<?= $loja['site'] ?>imagens/seo.png" alt="SEO"></li>
