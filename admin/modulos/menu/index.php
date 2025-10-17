@@ -72,6 +72,7 @@ $nivel_usuario = filter_var($_SESSION['nivel']);
                 <?php if(!$modo_whatsapp){ ?>
                     <li onclick="javascript: window.location.href = 'avaliacoes.php';" class="menu-opcao" data-active="avaliacoes">Avaliações</li>
                 <?php } ?>
+                <li onclick="javascript: window.location.href = 'vagas.php';" class="menu-opcao" data-active="vagas">Vagas</li>
                 <li onclick="javascript: window.location.href = 'configuracoes.php';" class="menu-opcao" data-active="configuracoes">Configurações</li>
                 <li onclick="javascript: window.location.href = 'logout.php';" class="menu-opcao opcao-logout">SAIR</li>
             <?php } ?>

@@ -1,3 +1,32 @@
+<?php
+// Conecta com o banco e busca as vagas
+require_once __DIR__ . '/../../bd/conecta.php';
+
+$vagas = [];
+try {
+    $sql = "SELECT titulo, requisitos FROM vagas ORDER BY data_criacao DESC";
+    $result = $conn->query($sql);
+    
+    if ($result && $result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            // Decodifica o JSON dos requisitos
+            $requisitos_array = json_decode($row['requisitos'], true);
+            if (json_last_error() !== JSON_ERROR_NONE) {
+                $requisitos_array = [$row['requisitos']]; // Fallback se não for JSON válido
+            }
+            $vagas[] = [
+                'titulo' => $row['titulo'],
+                'requisitos' => $requisitos_array
+            ];
+        }
+    }
+    $conn->close();
+} catch (Exception $e) {
+    // Em caso de erro, continua com array vazio
+    $vagas = [];
+}
+?>
+
 <style>
     #container-banner-trabalhe-conosco{
         background-image: url('<?= $loja['site'] ?>imagens/banner-trabalhe-conosco.png');
@@ -61,27 +90,24 @@
         <div id="container-vagas">
             <div class="swiper" id="swiper-vagas">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide vaga-card">
-                        <h4 class="text-white fw-semibold mb-4">Auxiliar de Vendas</h4>
-                        <p class="mb-2 text-white">- Possuir experiência na área de vendas;</p>
-                        <p class="mb-2 text-white">- Disponibilidade de horários;</p>
-                        <p class="mb-2 text-white">- Possuir CNH B.</p>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide vaga-card">
-                        <h4 class="text-white fw-semibold mb-4">Técnico Instalador</h4>
-                        <p class="mb-2 text-white">- Ser ágil e ter atenção a detalhes;</p>
-                        <p class="mb-2 text-white">- Disponibilidade de horários;</p>
-                        <p class="mb-2 text-white">- Possuir CNH B.</p>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide vaga-card">
-                        <h4 class="text-white fw-semibold mb-4">Costureira</h4>
-                        <p class="mb-2 text-white">- Possuir experiência na área de vendas;</p>
-                        <p class="mb-2 text-white">- Disponibilidade de horários;</p>
-                        <p class="mb-2 text-white">- Possuir CNH B.</p>
-                    </div>
+                    <?php if (!empty($vagas)): ?>
+                        <?php foreach ($vagas as $vaga): ?>
+                            <div class="swiper-slide vaga-card">
+                                <h4 class="text-white fw-semibold mb-4"><?= htmlspecialchars($vaga['titulo']) ?></h4>
+                                <?php foreach ($vaga['requisitos'] as $requisito): ?>
+                                    <p class="mb-2 text-white">- <?= htmlspecialchars($requisito) ?></p>
+                                <?php endforeach; ?>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <!-- Fallback caso não haja vagas no banco -->
+                        <div class="swiper-slide vaga-card">
+                            <h4 class="text-white fw-semibold mb-4">Nenhuma vaga disponível</h4>
+                            <p class="mb-2 text-white">- No momento não temos vagas abertas;</p>
+                            <p class="mb-2 text-white">- Acompanhe nosso site para futuras oportunidades;</p>
+                            <p class="mb-2 text-white">- Envie seu currículo para análise.</p>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <!-- If we need pagination -->
                 <!-- <div class="swiper-pagination"></div> -->
@@ -96,18 +122,28 @@
     // Init Swiper with autoplay and draggable
     (function() {
         const slideCount = document.querySelectorAll('#swiper-vagas .swiper-slide').length;
-        const desktopConfig = (slideCount === 2)
-            ? { slidesPerView: 2, spaceBetween: 24, centeredSlides: true, centeredSlidesBounds: true }
-            : { slidesPerView: 3, spaceBetween: 24 };
+        
+        // Configuração dinâmica baseada no número de vagas
+        let desktopConfig;
+        if (slideCount === 0) {
+            // Não inicializa o swiper se não há slides
+            return;
+        } else if (slideCount === 1) {
+            desktopConfig = { slidesPerView: 1, spaceBetween: 24, centeredSlides: true };
+        } else if (slideCount === 2) {
+            desktopConfig = { slidesPerView: 2, spaceBetween: 24, centeredSlides: true, centeredSlidesBounds: true };
+        } else {
+            desktopConfig = { slidesPerView: 3, spaceBetween: 24 };
+        }
 
         const swiperVagas = new Swiper('#swiper-vagas', {
             slidesPerView: 1,
             spaceBetween: 24,
-            autoplay: {
+            autoplay: slideCount > 1 ? {
                 delay: 3000,
                 disableOnInteraction: false,
-            },
-            loop: true,
+            } : false,
+            loop: slideCount > 1,
             grabCursor: true,
             centerInsufficientSlides: true,
             pagination: {
