@@ -50,7 +50,7 @@ $nivel_usuario = filter_var($_SESSION['nivel']);
                 <li onclick="javascript: window.location.href = 'produtos.php';" class="menu-opcao" data-active="produtos">Produtos</li>
                 <li onclick="javascript: window.location.href = 'logout.php';" class="menu-opcao opcao-logout">SAIR</li>
             <?php } else if($nivel_usuario == 'A' | $nivel_usuario == 'M' | $nivel_usuario == 'S'){ ?>
-                <li onclick="javascript: window.location.href = 'dashboard.php';" class="menu-opcao d-none" data-active="dashboard">Dashboard</li>
+                <li onclick="javascript: window.location.href = 'dashboard.php';" class="menu-opcao" data-active="dashboard">Dashboard</li>
                 <?php if($modo_whatsapp){ ?>
                     <?php if(!$modo_whatsapp_simples){ ?>
                         <li onclick="javascript: window.location.href = 'orcamentos.php';" class="d-none menu-opcao" data-active="orcamentos">Orçamentos</li>

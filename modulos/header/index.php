@@ -124,6 +124,16 @@ $sobre_site = $array_seo[0]['descricao'];
         <meta name="googlebot" content="noindex">    
     <?php } ?>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2MJ10X3N57"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2MJ10X3N57');
+    </script>
+
     <?php //SE A LOJA ESTIVER EM MANUTENÇÃO, REDIRECIONA PARA A PÁGINA DE MANUTENÇÃO
     if($loja['site_manutencao'] == 1){ echo "<script>window.location.href = '".$loja['site']."manutencao';</script>"; } ?>
 
@@ -142,17 +152,6 @@ $sobre_site = $array_seo[0]['descricao'];
             fbq('track', 'PageView');
         </script>
         <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=<?= $loja['facebook_pixel'] ?>&ev=PageView&noscript=1" /></noscript>
-    <?php } ?>
-
-    <?php if($loja['google_analytics'] != ''){ ?>
-        <!--GOOGLE ANALYTICS-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=<?= $loja['google_analytics'] ?>"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '<?= $loja['google_analytics'] ?>');
-        </script>
     <?php } ?>
     
     <?php if($loja['google_tag_manager_script'] != ''){ ?>

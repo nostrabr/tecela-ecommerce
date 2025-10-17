@@ -15,7 +15,7 @@ if(!isset($data_inicio) & !isset($data_fim)){
 ?>
 
 <!--SECTION DASHBOARD-->
-<section id="dashboard">
+<section id="dashboard" class="d-none">
   
     <div class="container-fluid">
         <div class="row">
@@ -370,6 +370,11 @@ if(!isset($data_inicio) & !isset($data_fim)){
     </div>
 
 </section>
+
+
+<!-- analytics oficial -->
+<iframe src="https://analyticstecela.ntbrweb.com/analytics.php" class="mt-5 w-100" style="height: 800px;"  title="Google Analytics Dashboard"></iframe>
+<!-- analytics oficial -->
 
 <!--SCRIPTS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
